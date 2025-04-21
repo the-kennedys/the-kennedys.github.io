@@ -3,7 +3,7 @@ layout: post
 title:  "Carrot and Coriander Soup"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
-contents_entry: soup
+contents_entry: soups
 index_entry: carrot coriander
 ---
 
