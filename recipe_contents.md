@@ -4,8 +4,6 @@ title:  "Recipe Contents"
 date:   2025-04-17 08:51:44 +0100
 ---
 
-# Content
-
 {% assign sections = site.recipes | map:"contents_entry" | uniq %}
 
 {% for section in sections %}
