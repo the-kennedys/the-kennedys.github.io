@@ -19,16 +19,16 @@ can have mnultiple index entries
 {% comment %}
 Split the string into an array and dedupe
 {% endcomment %}
-{% assign entry_list = entries | split: " " | uniq %}
+{% assign entry_list = entries | split: " " | uniq | sort %}
 
 
 
 {% for thing in entry_list %}
 - {{thing}}
-{% assign recipes_with_thing = site.recipes | where_exp: "item", "item.index_entry contains thing" %}
-  {% for recipe_with_thing in recipes_with_thing %}
-  - [{{recipe_with_thing.title}}]({{recipe_with_thing.url}})
-  {% endfor %}
-{% endfor %} 
+{%- assign recipes_with_thing = site.recipes | where_exp: "item", "item.index_entry contains thing" -%}
+{% for recipe_with_thing in recipes_with_thing %}
+    - [{{recipe_with_thing.title}}]({{recipe_with_thing.url}})
+{%- endfor -%}
+{%- endfor -%} 
 
 
