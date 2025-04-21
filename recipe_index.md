@@ -24,11 +24,10 @@ Split the string into an array and dedupe
 
 
 {% for thing in entry_list %}
-### {{thing}}
-
+- {{thing}}
 {% assign recipes_with_thing = site.recipes | where_exp: "item", "item.index_entry contains thing" %}
   {% for recipe_with_thing in recipes_with_thing %}
-[{{recipe_with_thing.title}}]({{recipe_with_thing.url}})
+  - [{{recipe_with_thing.title}}]({{recipe_with_thing.url}})
   {% endfor %}
 {% endfor %} 
 
