@@ -3,6 +3,8 @@ layout: post
 title:  "5 Spice Madras"
 date:   2025-04-17 08:55:44 +0100
 categories: recipe curry
+contents_entry: curry
+index_entry: madras
 ---
 
 Taken from Al's Kitchen Youtube Channel
