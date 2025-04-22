@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Spiced roast sweet potato and beetroot with chickpeas and feta"
@@ -8,8 +7,8 @@ contents_entry: mains
 index_entry: beetroot feta sweet
 ---
 
-
-This easy weeknight dish is even nicer the next day, so it’s worth making the full amount even if you’re cooking for fewer people.
+Always remember that you were eating beetroot the morning after eating this, or
+you will get the fright of your life
 
 Prep 15 min
 Cook 40 min
