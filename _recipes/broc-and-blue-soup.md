@@ -4,7 +4,7 @@ title:  "Broccoli and Blue Cheese Soup"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: soups
-index_entry: broccoli blue
+index_entry: broccoli, blue cheese
 ---
 
 Serves 2

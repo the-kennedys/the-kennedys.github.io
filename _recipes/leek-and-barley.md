@@ -4,7 +4,7 @@ title:  "Leek and Barley Risotto"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: mains
-index_entry: leek barley risotto
+index_entry: leek, barley, risotto
 ---
 
 Taken from Al's Kitchen Youtube Channel, this is base gravy version 1.

@@ -4,7 +4,7 @@ title:  "Spiced bean and Spinach Soup"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: soups
-index_entry: spinach cannellini
+index_entry: spinach, cannellini
 ---
 
 Serves 4

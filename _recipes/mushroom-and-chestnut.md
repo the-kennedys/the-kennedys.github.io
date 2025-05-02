@@ -4,7 +4,7 @@ title:  "Mushroom and Chestnut Hotpot"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: mains
-index_entry: mushroom chestnut
+index_entry: mushroom, chestnut
 ---
 
 From fast 800 cookbook

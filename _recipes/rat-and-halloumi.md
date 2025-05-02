@@ -4,7 +4,7 @@ title:  "Ratatouilli and Halloumi Bake"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: mains
-index_entry: ratatouilli halloumi
+index_entry: ratatouilli, halloumi
 ---
 
 Taken from Al's Kitchen Youtube Channel, this is base gravy version 1.

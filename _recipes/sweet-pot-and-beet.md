@@ -4,7 +4,7 @@ title:  "Spiced roast sweet potato and beetroot with chickpeas and feta"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: mains
-index_entry: beetroot feta sweet
+index_entry: beetroot, feta, sweet potato
 ---
 
 Always remember that you were eating beetroot the morning after eating this, or

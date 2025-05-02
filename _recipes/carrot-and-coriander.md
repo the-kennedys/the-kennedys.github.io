@@ -4,7 +4,7 @@ title:  "Carrot and Coriander Soup"
 date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: soups
-index_entry: carrot coriander
+index_entry: carrot, coriander
 ---
 
 Take a pack of coriander, finely chop and freeze in an ice cube tray on the 

@@ -4,7 +4,7 @@ title:  "Al's Rogan Josh"
 date:   2025-04-17 08:55:44 +0100
 categories: recipe curry
 contents_entry: curries
-index_entry: rogan tomato
+index_entry: rogan, tomato
 ---
 
 From Al's Kitchen youtube channel.
