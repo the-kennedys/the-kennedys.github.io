@@ -7,9 +7,7 @@ contents_entry: mains
 index_entry: leek, barley, risotto
 ---
 
-Taken from Al's Kitchen Youtube Channel, this is base gravy version 1.
-
-
+From fast 800
 
 # Ingredients
 Serves 2

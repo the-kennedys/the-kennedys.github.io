@@ -7,7 +7,8 @@ contents_entry: soups
 index_entry: mushroom
 ---
 
-Taken from Al's Kitchen Youtube Channel, this is base gravy version 1.
+Adapted from Fast 800 Cookbook. Original added milk, but I don't
+find it is needed. The tarragon was my addition.
 
 # Ingredients
 

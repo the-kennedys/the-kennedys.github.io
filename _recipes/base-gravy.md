@@ -8,6 +8,7 @@ index_entry: curry
 ---
 
 Taken from Al's Kitchen Youtube Channel, this is base gravy version 1.
+I make half this volume, split to 5 containers
 
 # Ingredients
 
@@ -22,7 +23,7 @@ Taken from Al's Kitchen Youtube Channel, this is base gravy version 1.
 - 2tsp salt
 - 60g Coriander
 - 2 tins toms
-- 2tsp Coriander
+- 2 tsp Coriander
 - 2 tsp Cumin
 - 2 tsp Turmeric
 - 2 tsp Paprica

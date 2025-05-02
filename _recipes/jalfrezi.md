@@ -7,6 +7,8 @@ contents_entry: curries
 index_entry: jalfrezi
 ---
 
+Transcribed from Al's Kitchen on youtube.
+
 # Ingredients 
 
 - 1 small onion sliced  

@@ -7,9 +7,7 @@ contents_entry: mains
 index_entry: ratatouilli, halloumi
 ---
 
-Taken from Al's Kitchen Youtube Channel, this is base gravy version 1.
-
-
+From Fast 800 Cookbook
 
 # Ingredients
 Serves 2

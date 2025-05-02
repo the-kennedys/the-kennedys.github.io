@@ -7,7 +7,7 @@ contents_entry: soups
 index_entry: carrot, coriander
 ---
 
-Take a pack of coriander, finely chop and freeze in an ice cube tray on the 
+Take a pack of coriander, finely chop and freeze with water in an ice cube tray on the 
 day of purchase. Use one third to make this soup
 
 # Ingredients
