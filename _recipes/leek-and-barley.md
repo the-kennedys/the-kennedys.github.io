@@ -14,7 +14,7 @@ Serves 2
 - 1 tbsp Olive Oil
 - 1 Onion finely Chopped
 - 1 Clove Garlic Crushed
-- 120g Pearl Barley
+- 60g Pearl Barley
 - 1 bay lkeaf
 - 1 leek, trimmed and sliced
 - 1 Stock cube
