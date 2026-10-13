@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Big Bena Jambalaya"
-date:   2025-04-17 08:55:44 +0100
+title:  "Big Bean Jambalaya"
+date:   2026-10-13 08:55:44 +0100
 categories: recipe curry
 contents_entry: mains
 index_entry: jamabalaya, rice, tomato
@@ -29,7 +29,7 @@ Serves 3
 - 1 tbsp tomato paste
 - 125g brown rice
 - 400g (14oz) can chopped tomatoes
-- 350 ml fresh vegetable stock
+- 250 ml fresh vegetable stock
 
 
 # Method 
@@ -47,4 +47,6 @@ Before you start: you will need a large casserole or saucecen with lid.
 
 1. Assemble and serve. Cut the lemon into wedges and chop some parsley leaves. Serve the jambalaya in bowls with the lemon wedges for squeezing over. Scatter over the parsley and add a few dashes of hot sauce for a Louisiana-style kick. Finish with a topping of "chicken" strips, if you like.
 
-Store. Leave the jambalaya to cool and store in the fridge for up to 2 days or freeze for up to 3 months. Reheat thoroughly before serving.
+## Store 
+
+Leave the jambalaya to cool and store in the fridge for up to 2 days or freeze for up to 3 months. Reheat thoroughly before serving.
