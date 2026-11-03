@@ -7,6 +7,8 @@ contents_entry: curries
 index_entry: rogan, tomato
 ---
 
+A fantastic medium/hot curry using base gravy
+
 From Al's Kitchen youtube channel.
 Serves 2
 

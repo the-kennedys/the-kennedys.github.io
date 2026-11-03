@@ -29,5 +29,6 @@ export default defineConfig({
     '/recipes/rogan-josh.html': '/recipes/rogan-josh',
     '/recipes/sausage-and-bean.html': '/recipes/sausage-and-bean',
     '/recipes/sweet-pot-and-beet.html': '/recipes/sweet-pot-and-beet',
+    '/recipes/wholemeal-malted-loaf.html': '/recipes/wholemeal-malted-loaf',
   },
 });

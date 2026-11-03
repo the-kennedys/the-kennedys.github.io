@@ -2,20 +2,24 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import RecipeCard from '../components/RecipeCard.astro';
-import { getTags } from '../utils/recipes';
+import { getTags, formatCategory } from '../utils/recipes';
 
 const allRecipes = await getCollection('recipes');
 
 // Sort alphabetically by title
 allRecipes.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
-// Calculate counts
-const counts = {
-  all: allRecipes.length,
-  curries: allRecipes.filter((r) => (r.data.contents_entry || '').toLowerCase().includes('curri')).length,
-  mains: allRecipes.filter((r) => (r.data.contents_entry || '').toLowerCase().includes('main')).length,
-  soups: allRecipes.filter((r) => (r.data.contents_entry || '').toLowerCase().includes('soup')).length,
-};
+// Calculate dynamic category counts
+const categoryMap = new Map<string, { filterKey: string; label: string; count: number }>();
+allRecipes.forEach((r) => {
+  const rawCat = (r.data.contents_entry || 'mains').toLowerCase().trim();
+  const label = formatCategory(rawCat);
+  if (!categoryMap.has(label)) {
+    categoryMap.set(label, { filterKey: rawCat, label, count: 0 });
+  }
+  categoryMap.get(label)!.count++;
+});
+const categoriesList = Array.from(categoryMap.values()).sort((a, b) => a.label.localeCompare(b.label));
 
 // Top popular ingredients for quick filter chips
 const tagSet = new Set<string>();
@@ -52,29 +56,17 @@ const popularTags = ['lentils', 'halloumi', 'beetroot', 'spinach', 'mushroom', '
           data-filter="all"
           class="cat-tab active px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all shadow-xs bg-white text-stone-900"
         >
-          All <span class="ml-1 text-xs opacity-70">({counts.all})</span>
+          All <span class="ml-1 text-xs opacity-70">({allRecipes.length})</span>
         </button>
-        <button
-          type="button"
-          data-filter="curries"
-          class="cat-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-stone-600 hover:text-stone-900 transition-all"
-        >
-          Curries <span class="ml-1 text-xs opacity-70">({counts.curries})</span>
-        </button>
-        <button
-          type="button"
-          data-filter="mains"
-          class="cat-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-stone-600 hover:text-stone-900 transition-all"
-        >
-          Mains <span class="ml-1 text-xs opacity-70">({counts.mains})</span>
-        </button>
-        <button
-          type="button"
-          data-filter="soups"
-          class="cat-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-stone-600 hover:text-stone-900 transition-all"
-        >
-          Soups <span class="ml-1 text-xs opacity-70">({counts.soups})</span>
-        </button>
+        {categoriesList.map((cat) => (
+          <button
+            type="button"
+            data-filter={cat.filterKey}
+            class="cat-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-stone-600 hover:text-stone-900 transition-all"
+          >
+            {cat.label} <span class="ml-1 text-xs opacity-70">({cat.count})</span>
+          </button>
+        ))}
       </div>
 
       <!-- Search Input -->

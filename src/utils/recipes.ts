@@ -3,6 +3,7 @@ export function formatCategory(cat?: string): string {
   const c = cat.toLowerCase().trim();
   if (c.includes('curry') || c.includes('curries')) return 'Curries';
   if (c.includes('soup')) return 'Soups';
+  if (c.includes('baking') || c.includes('bake') || c.includes('bread')) return 'Baking';
   if (c.includes('main')) return 'Mains';
   return cat.charAt(0).toUpperCase() + cat.slice(1);
 }
@@ -21,6 +22,13 @@ export function getCategoryBadge(cat?: string) {
       name: 'Soups',
       bgClass: 'bg-emerald-100 text-emerald-900 border-emerald-300',
       dotClass: 'bg-emerald-500',
+    };
+  }
+  if (c.includes('baking') || c.includes('bake') || c.includes('bread')) {
+    return {
+      name: 'Baking',
+      bgClass: 'bg-yellow-100 text-yellow-950 border-yellow-300',
+      dotClass: 'bg-yellow-600',
     };
   }
   return {
