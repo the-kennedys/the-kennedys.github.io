@@ -6,15 +6,13 @@ contents_entry: baking
 index_entry: bread, wholemeal, malted, loaf
 ---
 
-Makes 1 large loaf (2lb / 900g tin)
-Prep 25 min
+Makes 1 batard
+Prep 25 min (plus 2.5h folds & proof)
 Cook 40 min
 
-A hearty, nutty everyday loaf made with equal parts strong wholemeal and malted flour. Great crust, soft crumb, and toasts brilliantly.
+A hearty, nutty everyday loaf with a great crust and soft crumb that toasts brilliantly. Note that 6g is quite a low-salt recipe—feel free to push it up to 10g if you are normal.
 
-Repeated stretch and folds are impossible to remember - when I get to that phase, I take 3 teaspoons out, and turn one upside down for each stretch and fold. 
-
-Have a bowl of water to wet your hands before adding yeast and salt, and before each round of stretch and fold.
+On the kit front, I use a mahoosive mixing bowl, an oval Dutch oven from Nuovo, a dough scraper, and a lame (a razor blade on a handle). Two practical rules before you begin: keep a small bowl of water nearby to wet your hands so the dough doesn't glue itself to your fingers, and lay out three teaspoons on the counter—flip one upside down after each round of stretch-and-folds, because remembering which round you're on is otherwise impossible.
 
 # Ingredients
 
@@ -28,13 +26,13 @@ Have a bowl of water to wet your hands before adding yeast and salt, and before 
 
 # Method
 
-1. Mix the flours with the water, and mix into a rough dough. Leave for 30 minutes.
-2. Add the yeast and salt. Press them into the dough, then fold in. Leave for 30 minutes
-3. First stretch and fold  - stretch the dough up on the far side, fold over, turn the bowl 90 degrees, repeat so you stretch on 4 "sides". Leavr for 30 minutes. 
-3. Second stretch and fold  - same again, four stretches, leave for 30 minutes.
-3. Third stretch and fold - same again, four stretches, leave for 30 minutes. 
-5. Shape loaf. On a plain floured work surface, stretch into a rectangle. Fold a third over to the middle from each side. Roll down from the top and shape, then drop into a rice floured bannetton, with the best surface down. Set the oven to 220C and put the dutch oven in. Wait 30 minutes. 
-5. Flip the loaf onto a rice floured sheet of parchment, and use a lame (basically a razer blade) to cut a 1 cm slice along the length. Use the parchment paper as a sling to get the dough in the dutch oven.
-7. Bake with the lid on for 25 minutes.. 
-7. Remove the lid, reduce the temperature to 200C, and bake for another 15 minutes
-8. Cool. Turn out immediately onto a wire cooling rack and leave to cool completely before slicing.
+1. Autolyse. Mix the flours with the water and vinegar into a rough dough in a BIG mixing bowl. I iniitially mix and bind with a knife for a few seconds, then work all the dry flour in using the dough scraper. Leave for 30 minutes to hydrate the bran.
+2. Add yeast, salt, and oil. Sprinkle the yeast and salt over the dough and drizzle with the olive oil. Wet your hands, press them into the dough, then fold in until incorporated. Leave for 30 minutes.
+3. First stretch and fold. Wet your hands. Stretch the dough up on the far side, fold over to the centre, turn the bowl 90 degrees, and repeat so you stretch on 4 "sides". Turn teaspoon #1 upside down. Leave for 30 minutes.
+4. Second stretch and fold. Same again: four corner stretches, turn teaspoon #2 upside down. Leave for 30 minutes.
+5. Third stretch and fold. Same again: four corner stretches, turn teaspoon #3 upside down. Leave for 30 minutes.
+6. Shape batard. On a plain floured work surface, stretch into a rectangle. Fold a third over to the middle from each side (like a letter). Roll down from the top and shape tightly into a batard, then drop into a rice-floured banneton, with the seam side up (best surface down). Set the oven to 220C and put the Dutch oven in. Wait 30 minutes.
+7. Flip the loaf onto a rice-floured sheet of parchment, and use a lame (or razor blade) to cut a 1 cm slice along the length. Use the parchment paper as a sling to get the dough into the Dutch oven.
+8. Bake with the lid on for 25 minutes to trap the steam.
+9. Remove the lid, reduce the temperature to 200C, and bake for another 15 minutes.
+10. Cool. Turn out immediately onto a wire cooling rack and leave to cool completely before slicing.

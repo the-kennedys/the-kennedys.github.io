@@ -39,13 +39,18 @@ export function getCategoryBadge(cat?: string) {
 }
 
 export function getServings(body: string): string | null {
-  const match = body.match(/(?:serves|makes)[^\S\r\n]*:?[^\S\r\n]*([0-9]+(?:[^\S\r\n]*-[^\S\r\n]*[0-9]+)?)/i);
-  return match ? `Serves ${match[1].trim()}` : null;
+  const match = body.match(/^(?:serves|makes)[^\S\r\n]*:?[^\S\r\n]*(.+)$/im);
+  if (!match) return null;
+  const val = match[1].trim();
+  if (/^[0-9]+(?:\s*-\s*[0-9]+)?$/.test(val)) {
+    return `Serves ${val}`;
+  }
+  return val;
 }
 
 export function getPrepCookTime(body: string): { prep: string | null; cook: string | null } {
-  const prepMatch = body.match(/prep[^\S\r\n]*:?[^\S\r\n]*([0-9]+[^\S\r\n]*(?:min|mins|minutes|h|hr|hours)?)/i);
-  const cookMatch = body.match(/cook[^\S\r\n]*:?[^\S\r\n]*([0-9]+[^\S\r\n]*(?:min|mins|minutes|h|hr|hours)?)/i);
+  const prepMatch = body.match(/^prep[^\S\r\n]*:?[^\S\r\n]*(.+)$/im);
+  const cookMatch = body.match(/^cook[^\S\r\n]*:?[^\S\r\n]*(.+)$/im);
   return {
     prep: prepMatch ? `Prep ${prepMatch[1].trim()}` : null,
     cook: cookMatch ? `Cook ${cookMatch[1].trim()}` : null,
