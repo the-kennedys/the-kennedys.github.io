@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Recipe Not Found · 404" activeNav="recipes">
+  <div class="max-w-md mx-auto py-16 text-center">
+    <div class="w-16 h-16 rounded-3xl bg-amber-100 text-amber-800 flex items-center justify-center mx-auto mb-6 text-2xl font-bold font-display shadow-xs">
+      404
+    </div>
+    <h1 class="text-3xl font-bold font-display text-stone-900 mb-2">Recipe Not Found</h1>
+    <p class="text-stone-600 mb-6 text-sm">
+      Looks like that recipe wandered out of the kitchen.
+    </p>
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-semibold text-sm transition-colors shadow-xs"
+    >
+      ← Back to All Recipes
+    </a>
+  </div>
+</Layout>

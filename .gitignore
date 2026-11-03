@@ -1,5 +1,17 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Build output
+dist/
+_site/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Cache
+.astro/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata/
+
+# Environment and OS
+.DS_Store
+*.local

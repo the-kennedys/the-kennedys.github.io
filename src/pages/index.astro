@@ -1,0 +1,304 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import { getTags } from '../utils/recipes';
+
+const allRecipes = await getCollection('recipes');
+
+// Sort alphabetically by title
+allRecipes.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+// Calculate counts
+const counts = {
+  all: allRecipes.length,
+  curries: allRecipes.filter((r) => (r.data.contents_entry || '').toLowerCase().includes('curri')).length,
+  mains: allRecipes.filter((r) => (r.data.contents_entry || '').toLowerCase().includes('main')).length,
+  soups: allRecipes.filter((r) => (r.data.contents_entry || '').toLowerCase().includes('soup')).length,
+};
+
+// Top popular ingredients for quick filter chips
+const tagSet = new Set<string>();
+allRecipes.forEach((r) => {
+  getTags(r.data.index_entry).forEach((t) => tagSet.add(t));
+});
+const popularTags = ['lentils', 'halloumi', 'beetroot', 'spinach', 'mushroom', 'rice', 'tomato', 'curry'];
+---
+
+<Layout title="Paul's Recipes · the-kennedys.me.uk" activeNav="recipes">
+  <!-- Hero Section -->
+  <div class="mb-10 text-center sm:text-left sm:flex sm:items-end sm:justify-between gap-6 pb-8 border-b border-stone-200/80">
+    <div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-stone-900 tracking-tight mb-3">
+        Paul's Recipe Collection
+      </h1>
+      <p class="text-base sm:text-lg text-stone-600 max-w-2xl leading-relaxed">
+        Personal, battle-tested recipes for curries, soups, and vegetarian mains. No fluff, no 2,000-word life stories — just ingredients and method.
+      </p>
+    </div>
+    <div class="mt-4 sm:mt-0 flex sm:flex-col items-center sm:items-end justify-center gap-1 text-xs font-semibold text-stone-600 bg-stone-100/80 px-3.5 py-2 rounded-xl border border-stone-200/60">
+      <span class="text-stone-900 text-sm font-bold">{allRecipes.length} Total Recipes</span>
+      <span>Updated October 2026</span>
+    </div>
+  </div>
+
+  <!-- Search & Filter Controls -->
+  <div class="space-y-4 mb-8">
+    <div class="flex flex-col md:flex-row gap-4 items-stretch md:items-center justify-between">
+      <!-- Category Tabs -->
+      <div class="flex flex-wrap items-center gap-1.5 p-1 bg-stone-200/70 rounded-xl max-w-fit" id="category-tabs">
+        <button
+          type="button"
+          data-filter="all"
+          class="cat-tab active px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all shadow-xs bg-white text-stone-900"
+        >
+          All <span class="ml-1 text-xs opacity-70">({counts.all})</span>
+        </button>
+        <button
+          type="button"
+          data-filter="curries"
+          class="cat-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-stone-600 hover:text-stone-900 transition-all"
+        >
+          Curries <span class="ml-1 text-xs opacity-70">({counts.curries})</span>
+        </button>
+        <button
+          type="button"
+          data-filter="mains"
+          class="cat-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-stone-600 hover:text-stone-900 transition-all"
+        >
+          Mains <span class="ml-1 text-xs opacity-70">({counts.mains})</span>
+        </button>
+        <button
+          type="button"
+          data-filter="soups"
+          class="cat-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-stone-600 hover:text-stone-900 transition-all"
+        >
+          Soups <span class="ml-1 text-xs opacity-70">({counts.soups})</span>
+        </button>
+      </div>
+
+      <!-- Search Input -->
+      <div class="relative flex-1 max-w-md">
+        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-stone-400">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.3-4.3"/>
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="recipe-search"
+          placeholder="Filter by title or index term (e.g. lentils, jambalaya, chilli)..."
+          class="w-full pl-10 pr-9 py-2 bg-white border border-stone-200 rounded-xl text-sm placeholder:text-stone-400 focus:outline-hidden focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all"
+        />
+        <button
+          type="button"
+          id="clear-search"
+          class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-stone-400 hover:text-stone-600"
+          title="Clear search"
+        >
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6 6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick index filter chips -->
+    <div class="flex flex-wrap items-center gap-1.5 text-xs text-stone-600">
+      <span class="font-medium">Popular index terms:</span>
+      {popularTags.map((tag) => (
+        <button
+          type="button"
+          class="tag-pill px-2.5 py-0.5 rounded-md bg-stone-100 hover:bg-amber-100 hover:text-amber-900 border border-stone-200/70 transition-colors"
+          data-tag={tag}
+        >
+          #{tag}
+        </button>
+      ))}
+    </div>
+
+    <!-- Active filter & count indicator -->
+    <div class="flex items-center justify-between text-xs text-stone-600 pt-2">
+      <span id="results-count">Showing all {allRecipes.length} recipes</span>
+      <button
+        id="reset-all"
+        class="hidden text-amber-700 hover:underline font-semibold"
+      >
+        Reset filters
+      </button>
+    </div>
+  </div>
+
+  <!-- Recipe Grid -->
+  <div id="recipe-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {allRecipes.map((recipe) => (
+      <RecipeCard recipe={recipe} />
+    ))}
+  </div>
+
+  <!-- Empty State (Hidden by default) -->
+  <div id="empty-state" class="hidden py-16 text-center bg-white rounded-2xl border border-stone-200 my-4">
+    <div class="w-12 h-12 mx-auto rounded-full bg-amber-100 flex items-center justify-center text-amber-700 mb-3">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.3-4.3"/>
+      </svg>
+    </div>
+    <h3 class="text-lg font-bold font-display text-stone-900 mb-1">No recipes found</h3>
+    <p class="text-sm text-stone-600 mb-4 max-w-sm mx-auto">
+      No recipes match your current search and category filters.
+    </p>
+    <button
+      type="button"
+      id="empty-reset-btn"
+      class="px-4 py-2 bg-amber-700 hover:bg-amber-800 text-white rounded-xl text-xs font-semibold shadow-xs transition-colors"
+    >
+      Reset all filters
+    </button>
+  </div>
+</Layout>
+
+<script>
+  // Client-side instant filtering logic
+  const searchInput = document.getElementById('recipe-search') as HTMLInputElement | null;
+  const clearBtn = document.getElementById('clear-search');
+  const resetBtn = document.getElementById('reset-all');
+  const emptyResetBtn = document.getElementById('empty-reset-btn');
+  const resultsCount = document.getElementById('results-count');
+  const emptyState = document.getElementById('empty-state');
+  const recipeGrid = document.getElementById('recipe-grid');
+  const cards = document.querySelectorAll('.recipe-card');
+  const catButtons = document.querySelectorAll('#category-tabs .cat-tab');
+  const tagPills = document.querySelectorAll('.tag-pill');
+
+  let currentCategory = 'all';
+  let searchQuery = '';
+
+  function updateFilter() {
+    let visibleCount = 0;
+    const totalCount = cards.length;
+    const q = searchQuery.toLowerCase().trim();
+
+    cards.forEach((cardEl) => {
+      const card = cardEl as HTMLElement;
+      const category = card.dataset.category || '';
+      const title = card.dataset.title || '';
+      const tags = card.dataset.tags || '';
+
+      const matchesCat = currentCategory === 'all' || category.includes(currentCategory);
+      const matchesSearch = !q || title.includes(q) || tags.includes(q) || category.includes(q);
+
+      if (matchesCat && matchesSearch) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Update count display
+    if (resultsCount) {
+      if (visibleCount === totalCount && !q && currentCategory === 'all') {
+        resultsCount.textContent = `Showing all ${totalCount} recipes`;
+      } else {
+        resultsCount.textContent = `Showing ${visibleCount} of ${totalCount} recipes`;
+      }
+    }
+
+    // Toggle empty state
+    if (visibleCount === 0) {
+      emptyState?.classList.remove('hidden');
+      recipeGrid?.classList.add('hidden');
+    } else {
+      emptyState?.classList.add('hidden');
+      recipeGrid?.classList.remove('hidden');
+    }
+
+    // Toggle reset buttons
+    const isFiltered = currentCategory !== 'all' || q !== '';
+    if (resetBtn) {
+      if (isFiltered) resetBtn.classList.remove('hidden');
+      else resetBtn.classList.add('hidden');
+    }
+
+    if (clearBtn) {
+      if (q) clearBtn.classList.remove('hidden');
+      else clearBtn.classList.add('hidden');
+    }
+  }
+
+  // Category Tab clicks
+  catButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      catButtons.forEach((b) => {
+        b.classList.remove('bg-white', 'text-stone-900', 'shadow-xs', 'active');
+        b.classList.add('text-stone-600');
+      });
+      btn.classList.add('bg-white', 'text-stone-900', 'shadow-xs', 'active');
+      btn.classList.remove('text-stone-600');
+
+      currentCategory = btn.getAttribute('data-filter') || 'all';
+      updateFilter();
+    });
+  });
+
+  // Search input typing
+  searchInput?.addEventListener('input', (e) => {
+    searchQuery = (e.target as HTMLInputElement).value;
+    updateFilter();
+  });
+
+  // Clear search button
+  clearBtn?.addEventListener('click', () => {
+    if (searchInput) searchInput.value = '';
+    searchQuery = '';
+    searchInput?.focus();
+    updateFilter();
+  });
+
+  // Tag pill clicks
+  tagPills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      const tag = pill.getAttribute('data-tag') || '';
+      if (searchInput) {
+        searchInput.value = tag;
+        searchQuery = tag;
+        searchInput.focus();
+        updateFilter();
+      }
+    });
+  });
+
+  // Reset all handler
+  function resetAll() {
+    if (searchInput) searchInput.value = '';
+    searchQuery = '';
+    currentCategory = 'all';
+
+    catButtons.forEach((b) => {
+      const filter = b.getAttribute('data-filter');
+      if (filter === 'all') {
+        b.classList.add('bg-white', 'text-stone-900', 'shadow-xs', 'active');
+        b.classList.remove('text-stone-600');
+      } else {
+        b.classList.remove('bg-white', 'text-stone-900', 'shadow-xs', 'active');
+        b.classList.add('text-stone-600');
+      }
+    });
+
+    updateFilter();
+  }
+
+  resetBtn?.addEventListener('click', resetAll);
+  emptyResetBtn?.addEventListener('click', resetAll);
+
+  // Check URL parameters on page load (e.g., ?tag=lentils)
+  const urlParams = new URLSearchParams(window.location.search);
+  const tagParam = urlParams.get('tag');
+  if (tagParam && searchInput) {
+    searchInput.value = tagParam;
+    searchQuery = tagParam;
+    updateFilter();
+  }
+</script>

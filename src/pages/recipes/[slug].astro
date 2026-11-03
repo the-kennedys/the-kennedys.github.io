@@ -1,0 +1,474 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { getCategoryBadge, getServings, getPrepCookTime, getTags } from '../../utils/recipes';
+
+export async function getStaticPaths() {
+  const recipes = await getCollection('recipes');
+  // Sort alphabetically
+  recipes.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+  return recipes.map((recipe, index) => {
+    const prev = index > 0 ? recipes[index - 1] : null;
+    const next = index < recipes.length - 1 ? recipes[index + 1] : null;
+
+    return {
+      params: { slug: recipe.id },
+      props: { recipe, prev, next },
+    };
+  });
+}
+
+const { recipe, prev, next } = Astro.props;
+const { Content } = await render(recipe);
+
+const category = getCategoryBadge(recipe.data.contents_entry);
+const servings = getServings(recipe.body || '');
+const { prep, cook } = getPrepCookTime(recipe.body || '');
+const tags = getTags(recipe.data.index_entry);
+---
+
+<Layout title={`${recipe.data.title} · Recipe`} activeNav="recipes">
+  <div class="recipe-container max-w-4xl mx-auto">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 flex items-center gap-2 text-xs font-medium text-stone-600 no-print">
+      <a href="/" class="hover:text-amber-800 transition-colors flex items-center gap-1">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        All Recipes
+      </a>
+      <span>/</span>
+      <span class="text-stone-600">{category.name}</span>
+      <span>/</span>
+      <span class="text-stone-900 font-semibold truncate max-w-[200px] sm:max-w-none">{recipe.data.title}</span>
+    </nav>
+
+    <!-- Recipe Header Card -->
+    <header class="bg-white rounded-3xl border border-stone-200/90 p-6 sm:p-10 mb-8 shadow-xs">
+      <div class="flex flex-wrap items-center gap-2.5 mb-4">
+        <!-- Category Badge -->
+        <span class:list={[
+          "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border",
+          category.bgClass
+        ]}>
+          <span class:list={["w-1.5 h-1.5 rounded-full", category.dotClass]}></span>
+          {category.name}
+        </span>
+
+        <!-- Servings Chip -->
+        {servings && (
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-stone-700 bg-stone-100 px-3 py-1 rounded-full border border-stone-200/60">
+            <svg class="w-3.5 h-3.5 text-stone-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            {servings}
+          </span>
+        )}
+
+        <!-- Prep & Cook Chips -->
+        {prep && (
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-stone-700 bg-stone-100 px-3 py-1 rounded-full border border-stone-200/60">
+            ⏱ {prep}
+          </span>
+        )}
+        {cook && (
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-stone-700 bg-stone-100 px-3 py-1 rounded-full border border-stone-200/60">
+            🔥 {cook}
+          </span>
+        )}
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-stone-900 tracking-tight leading-tight mb-4">
+        {recipe.data.title}
+      </h1>
+
+      <!-- Kitchen Action Bar -->
+      <div class="mt-6 pt-6 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3 no-print">
+        <div class="flex items-center gap-2">
+          <!-- Print Button -->
+          <button
+            type="button"
+            onclick="window.print()"
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-stone-100 hover:bg-stone-200/80 text-stone-800 border border-stone-200 transition-colors cursor-pointer"
+          >
+            <svg class="w-4 h-4 text-stone-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"/>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            Print Recipe
+          </button>
+
+          <!-- Screen Wake Lock Toggle -->
+          <button
+            type="button"
+            id="wake-lock-btn"
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-stone-100 hover:bg-stone-200/80 text-stone-800 border border-stone-200 transition-colors cursor-pointer"
+            title="Keep screen active while cooking"
+          >
+            <svg class="w-4 h-4 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <span id="wake-lock-label">Keep Screen Awake</span>
+          </button>
+        </div>
+
+        <!-- Checklist progress badge -->
+        <div id="checklist-tracker" class="hidden text-xs font-medium text-stone-600 bg-amber-50/80 border border-amber-200/70 px-3 py-1.5 rounded-xl">
+          <span id="checklist-count" class="font-bold text-amber-900">0</span> prepped
+          <button id="reset-checklist" class="ml-2 text-stone-500 hover:text-stone-800 underline text-[11px] cursor-pointer">
+            Reset
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Recipe Content Body -->
+    <main class="recipe-article bg-white rounded-3xl border border-stone-200/90 p-6 sm:p-10 mb-8 shadow-xs">
+      <div id="recipe-body-content" class="recipe-prose">
+        <Content />
+      </div>
+    </main>
+
+    <!-- Tags Footer -->
+    {tags.length > 0 && (
+      <div class="bg-white rounded-2xl border border-stone-200/80 p-5 mb-8 flex flex-wrap items-center gap-2 no-print">
+        <span class="text-xs font-semibold text-stone-600">Index entries:</span>
+        {tags.map((tag) => (
+          <a
+            href={`/?tag=${encodeURIComponent(tag)}`}
+            class="text-xs font-medium text-stone-700 bg-stone-100 hover:bg-amber-100 hover:text-amber-900 border border-stone-200 px-2.5 py-1 rounded-md transition-colors"
+          >
+            #{tag}
+          </a>
+        ))}
+        <a href="/recipe-index" class="text-xs text-amber-700 hover:underline ml-auto font-medium">
+          View full index →
+        </a>
+      </div>
+    )}
+
+    <!-- Prev / Next Navigation -->
+    <nav class="grid grid-cols-1 sm:grid-cols-2 gap-4 no-print">
+      {prev ? (
+        <a
+          href={`/recipes/${prev.id}`}
+          class="p-4 bg-white rounded-2xl border border-stone-200/90 hover:border-amber-400/80 shadow-xs hover:shadow-sm transition-all group flex flex-col"
+        >
+          <span class="text-xs font-semibold text-stone-600 flex items-center gap-1 mb-1">
+            <svg class="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Previous Recipe
+          </span>
+          <span class="text-base font-bold font-display text-stone-900 group-hover:text-amber-800 transition-colors">
+            {prev.data.title}
+          </span>
+        </a>
+      ) : <div />}
+
+      {next && (
+        <a
+          href={`/recipes/${next.id}`}
+          class="p-4 bg-white rounded-2xl border border-stone-200/90 hover:border-amber-400/80 shadow-xs hover:shadow-sm transition-all group flex flex-col text-right sm:items-end"
+        >
+          <span class="text-xs font-semibold text-stone-600 flex items-center gap-1 mb-1">
+            Next Recipe
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+          <span class="text-base font-bold font-display text-stone-900 group-hover:text-amber-800 transition-colors">
+            {next.data.title}
+          </span>
+        </a>
+      )}
+    </nav>
+  </div>
+</Layout>
+
+<style is:global>
+  /* Recipe Prose & Interactive Styling */
+  .recipe-prose {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #292524;
+  }
+
+  /* Headings styling */
+  .recipe-prose h1, .recipe-prose h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    color: #1c1917;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f5f0e8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .recipe-prose h1 {
+    font-size: 1.65rem;
+  }
+  .recipe-prose h2 {
+    font-size: 1.35rem;
+  }
+
+  /* Intros and notes */
+  .recipe-prose > p:first-of-type {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #44403c;
+    background-color: #faf7f2;
+    padding: 1rem 1.25rem;
+    border-radius: 0.875rem;
+    border-left: 4px solid #d97706;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Ingredients Checklist Styling */
+  .recipe-prose ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.25rem 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 0.5rem 1.25rem;
+  }
+
+  .recipe-prose ul li {
+    position: relative;
+    padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+    background-color: #faf7f2;
+    border: 1px solid #ede8e0;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s ease-in-out;
+    display: flex;
+    align-items: center;
+    font-size: 0.9375rem;
+  }
+
+  .recipe-prose ul li:hover {
+    background-color: #f5f0e8;
+    border-color: #e5ded4;
+  }
+
+  /* Checkbox tick box indicator */
+  .recipe-prose ul li::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 0.35rem;
+    border: 1.5px solid #a8a29e;
+    background-color: #ffffff;
+    transition: all 0.15s ease-in-out;
+  }
+
+  /* Checked state */
+  .recipe-prose ul li.checked {
+    background-color: #f5f5f4;
+    color: #a8a29e;
+    text-decoration: line-through;
+    border-color: #e7e5e4;
+  }
+
+  .recipe-prose ul li.checked::before {
+    background-color: #059669;
+    border-color: #059669;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Method Steps / Instructions Ordered List */
+  .recipe-prose ol {
+    list-style: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .recipe-prose ol li {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 3.25rem;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  .recipe-prose ol li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: #ea580c;
+    color: #ffffff;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Print Stylesheet Overrides */
+  @media print {
+    .recipe-container {
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .recipe-article, header {
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin-bottom: 1.5rem !important;
+    }
+    .recipe-prose ul {
+      grid-template-columns: 1fr 1fr !important;
+    }
+    .recipe-prose ul li {
+      border: none !important;
+      background: transparent !important;
+      padding: 0.2rem 0.5rem 0.2rem 1.5rem !important;
+      text-decoration: none !important;
+      color: #000 !important;
+    }
+    .recipe-prose ul li::before {
+      display: none !important;
+    }
+    .recipe-prose ol li::before {
+      background: #000 !important;
+      color: #fff !important;
+    }
+  }
+</style>
+
+<script>
+  // Clean up redundant standalone "Serves X" paragraphs in prose since it is in header badge
+  document.querySelectorAll('.recipe-prose > p').forEach((p) => {
+    const text = p.textContent?.trim() || '';
+    if (/^(?:serves|makes)\s*:?\s*[0-9]+/i.test(text)) {
+      p.remove();
+    }
+  });
+
+  // Ingredients Tap-to-Checklist Feature
+  const recipeId = window.location.pathname;
+  const storageKey = `recipe_checked_${recipeId}`;
+  const ingredientsList = document.querySelectorAll('.recipe-prose ul li');
+  const trackerEl = document.getElementById('checklist-tracker');
+  const countEl = document.getElementById('checklist-count');
+  const resetChecklistBtn = document.getElementById('reset-checklist');
+
+  if (ingredientsList.length > 0) {
+    trackerEl?.classList.remove('hidden');
+
+    // Load saved checklist from session
+    let checkedIndices: number[] = [];
+    try {
+      const saved = sessionStorage.getItem(storageKey);
+      if (saved) checkedIndices = JSON.parse(saved);
+    } catch (e) {}
+
+    function updateChecklistUI() {
+      ingredientsList.forEach((li, idx) => {
+        if (checkedIndices.includes(idx)) {
+          li.classList.add('checked');
+        } else {
+          li.classList.remove('checked');
+        }
+      });
+
+      if (countEl) {
+        countEl.textContent = `${checkedIndices.length} / ${ingredientsList.length}`;
+      }
+
+      try {
+        sessionStorage.setItem(storageKey, JSON.stringify(checkedIndices));
+      } catch (e) {}
+    }
+
+    // Attach click events to each ingredient item
+    ingredientsList.forEach((li, idx) => {
+      li.addEventListener('click', () => {
+        if (checkedIndices.includes(idx)) {
+          checkedIndices = checkedIndices.filter((i) => i !== idx);
+        } else {
+          checkedIndices.push(idx);
+        }
+        updateChecklistUI();
+      });
+    });
+
+    // Reset checklist handler
+    resetChecklistBtn?.addEventListener('click', () => {
+      checkedIndices = [];
+      updateChecklistUI();
+    });
+
+    updateChecklistUI();
+  }
+
+  // Screen Wake Lock API ("Keep Screen Awake" while cooking)
+  const wakeLockBtn = document.getElementById('wake-lock-btn');
+  const wakeLockLabel = document.getElementById('wake-lock-label');
+  let wakeLock: any = null;
+
+  async function toggleWakeLock() {
+    if (!('wakeLock' in navigator)) {
+      alert('Screen Wake Lock is not supported on this browser.');
+      return;
+    }
+
+    try {
+      if (wakeLock === null) {
+        wakeLock = await (navigator as any).wakeLock.request('screen');
+        if (wakeLockBtn && wakeLockLabel) {
+          wakeLockBtn.classList.remove('bg-stone-100', 'text-stone-800');
+          wakeLockBtn.classList.add('bg-amber-600', 'text-white', 'border-amber-700');
+          wakeLockLabel.textContent = 'Screen Kept Awake';
+        }
+        wakeLock.addEventListener('release', () => {
+          wakeLock = null;
+          if (wakeLockBtn && wakeLockLabel) {
+            wakeLockBtn.classList.add('bg-stone-100', 'text-stone-800');
+            wakeLockBtn.classList.remove('bg-amber-600', 'text-white', 'border-amber-700');
+            wakeLockLabel.textContent = 'Keep Screen Awake';
+          }
+        });
+      } else {
+        await wakeLock.release();
+        wakeLock = null;
+      }
+    } catch (err) {
+      console.warn('Wake Lock error:', err);
+    }
+  }
+
+  wakeLockBtn?.addEventListener('click', toggleWakeLock);
+</script>

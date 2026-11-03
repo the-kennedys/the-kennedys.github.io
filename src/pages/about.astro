@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About · Paul's Recipes" activeNav="about">
+  <div class="max-w-2xl mx-auto">
+    <div class="bg-white rounded-3xl border border-stone-200/90 p-8 sm:p-12 shadow-xs">
+      <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-800 mb-6">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 11h16a1 1 0 0 1 1 1v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-6a1 1 0 0 1 1-1Z"/>
+          <path d="M2 11h20"/>
+          <path d="M9 7c0-1.5.5-3 3-3s3 1.5 3 3"/>
+        </svg>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-bold font-display text-stone-900 tracking-tight mb-4">
+        About This Recipe Book
+      </h1>
+
+      <div class="space-y-4 text-stone-700 leading-relaxed">
+        <p>
+          Welcome! This site started out as a general personal blog, but like many side projects, the blogging never really happened. Instead, it became the home for my personal cooking notes, tried-and-tested curries, soups, and vegetarian bakes.
+        </p>
+
+        <p>
+          I've rebuilt it from the ground up to be <strong>recipe-first</strong>:
+        </p>
+
+        <ul class="space-y-2 py-2">
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>No life stories:</strong> Straight to the ingredients and method.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Tap-to-check ingredients:</strong> Easily strike off ingredients on your phone or tablet while cooking.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Screen stay-awake toggle:</strong> Keep your screen from dimming while cooking so you don't have to touch it with messy hands.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-600 font-bold">✓</span>
+            <span><strong>Clean print mode:</strong> Clean 1-page/2-page printouts for sticking on the fridge or keeping on the kitchen counter.</span>
+          </li>
+        </ul>
+
+        <p>
+          Sources and inspirations include Al's Kitchen, the Fast 800 cookbook, Bosh!, and various kitchen experiments.
+        </p>
+
+        <div class="pt-6 mt-6 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+          <span>Hosted on GitHub Pages · Built with Astro</span>
+          <a
+            href="https://github.com/the-kennedys/the-kennedys.github.io"
+            class="text-amber-700 hover:underline font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Source on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

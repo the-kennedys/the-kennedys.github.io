@@ -1,0 +1,111 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { getTags, getCategoryBadge } from '../utils/recipes';
+
+const allRecipes = await getCollection('recipes');
+
+// Map of index term -> list of recipes
+const tagMap: Record<string, typeof allRecipes> = {};
+
+allRecipes.forEach((recipe) => {
+  const tags = getTags(recipe.data.index_entry);
+  tags.forEach((tag) => {
+    if (!tagMap[tag]) {
+      tagMap[tag] = [];
+    }
+    tagMap[tag].push(recipe);
+  });
+});
+
+// Sorted list of unique index terms
+const sortedTags = Object.keys(tagMap).sort((a, b) => a.localeCompare(b));
+
+// Group terms by their first letter
+const lettersMap: Record<string, string[]> = {};
+sortedTags.forEach((tag) => {
+  const letter = tag.charAt(0).toUpperCase();
+  if (!lettersMap[letter]) {
+    lettersMap[letter] = [];
+  }
+  lettersMap[letter].push(tag);
+});
+
+const letters = Object.keys(lettersMap).sort();
+---
+
+<Layout title="Recipe Index · Paul's Recipes" activeNav="index">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="mb-8 pb-6 border-b border-stone-200/80">
+      <h1 class="text-3xl sm:text-4xl font-bold font-display text-stone-900 tracking-tight mb-2">
+        Recipe Index
+      </h1>
+      <p class="text-sm sm:text-base text-stone-600">
+        Alphabetical cookbook index by dish, ingredient, and style.
+      </p>
+
+      <!-- Alphabet quick-jump bar -->
+      <div class="flex flex-wrap items-center gap-1.5 mt-6">
+        {letters.map((letter) => (
+          <a
+            href={`#section-${letter}`}
+            class="w-8 h-8 rounded-lg bg-stone-100 hover:bg-amber-100 hover:text-amber-900 text-stone-700 font-bold text-xs flex items-center justify-center border border-stone-200/70 transition-colors"
+          >
+            {letter}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Letter Sections -->
+    <div class="space-y-10">
+      {letters.map((letter) => (
+        <section id={`section-${letter}`} class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="w-10 h-10 rounded-xl bg-amber-700 text-white font-display font-bold text-lg flex items-center justify-center shadow-xs">
+              {letter}
+            </span>
+            <div class="h-0.5 flex-1 bg-stone-200/70"></div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {lettersMap[letter].map((tag) => {
+              const recipes = tagMap[tag];
+              return (
+                <div class="bg-white rounded-2xl border border-stone-200/90 p-4 shadow-xs">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-base font-bold font-display text-stone-900 capitalize">
+                      {tag}
+                    </span>
+                    <span class="text-xs font-semibold px-2 py-0.5 bg-stone-100 text-stone-600 rounded-md">
+                      {recipes.length} {recipes.length === 1 ? 'recipe' : 'recipes'}
+                    </span>
+                  </div>
+                  <ul class="space-y-1.5 pt-1 border-t border-stone-100 text-sm">
+                    {recipes.map((r) => {
+                      const cat = getCategoryBadge(r.data.contents_entry);
+                      return (
+                        <li>
+                          <a
+                            href={`/recipes/${r.id}`}
+                            class="group flex items-center justify-between text-stone-700 hover:text-amber-800 transition-colors"
+                          >
+                            <span class="group-hover:underline truncate">{r.data.title}</span>
+                            <span class:list={["text-[10px] font-semibold px-1.5 py-0.2 rounded border ml-2 shrink-0", cat.bgClass]}>
+                              {cat.name}
+                            </span>
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+</Layout>

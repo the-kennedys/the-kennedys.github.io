@@ -1,0 +1,16 @@
+{
+  "name": "the-kennedys.github.io",
+  "version": "1.0.0",
+  "description": "Paul's Recipe Collection",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "astro": "^7.4.5",
+    "tailwindcss": "^4.3.4"
+  }
+}
