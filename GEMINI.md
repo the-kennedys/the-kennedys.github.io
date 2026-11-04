@@ -65,6 +65,7 @@ index_entry: keyword, keyword  # comma-separated search tags
 | `jambalaya.md` | Big Bean Jambalaya | Main | ✅ Vegan (from Bosh!) |
 | `leek-and-barley.md` | Leek and Barley Risotto | Main | ✅ Vegan (veganised) |
 | `lentil-coconut-soup.md` | Lentil and Coconut Soup | Soup | ✅ Vegan |
+| `moroccan-chickpea-stew.md` | Moroccan Chickpea Stew | Main | ✅ Vegan |
 | `mushroom-and-chestnut.md` | Mushroom and Chestnut Hotpot | Main | ✅ Vegan |
 | `mushroom-soup.md` | Mushroom Soup | Soup | ✅ Vegan |
 | `rat-and-halloumi.md` | Ratatouille and Smoked Tofu Bake | Main | ✅ Vegan (veganised) |
