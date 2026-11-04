@@ -136,10 +136,10 @@ const popularTags = ['lentils', 'halloumi', 'beetroot', 'spinach', 'mushroom', '
       {popularTags.map((tag) => (
         <button
           type="button"
-          class="tag-pill px-2.5 py-0.5 rounded-md bg-stone-100 hover:bg-amber-100 hover:text-amber-900 border border-stone-200/70 transition-colors cursor-pointer"
+          class="tag-pill px-2.5 py-0.5 rounded-md bg-stone-100 hover:bg-amber-100 hover:text-amber-900 border border-stone-200/70 transition-colors cursor-pointer capitalize"
           data-tag={tag}
         >
-          #{tag}
+          {tag}
         </button>
       ))}
     </div>
@@ -181,8 +181,8 @@ const popularTags = ['lentils', 'halloumi', 'beetroot', 'spinach', 'mushroom', '
           </span>
         </div>
 
-        <!-- Recipe Rows Grid (2 columns on tablet/desktop) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 recipe-list">
+        <!-- Recipe Rows (Single column contents page) -->
+        <div class="flex flex-col recipe-list">
           {category.recipes.map((recipe) => (
             <RecipeRow recipe={recipe} />
           ))}
@@ -253,7 +253,7 @@ const popularTags = ['lentils', 'halloumi', 'beetroot', 'spinach', 'mushroom', '
         const matchesSearch = !q || title.includes(q) || tags.includes(q) || sectionCategory.includes(q);
 
         if (matchesSearch) {
-          item.style.display = 'flex';
+          item.style.display = 'block';
           sectionVisibleCount++;
           totalVisible++;
         } else {
