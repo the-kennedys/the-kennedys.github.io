@@ -181,8 +181,8 @@ const popularTags = ['lentils', 'halloumi', 'beetroot', 'spinach', 'mushroom', '
           </span>
         </div>
 
-        <!-- Recipe Rows (Single column contents page) -->
-        <div class="flex flex-col recipe-list">
+        <!-- Recipe Cards Grid (2 columns) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 recipe-list">
           {category.recipes.map((recipe) => (
             <RecipeRow recipe={recipe} />
           ))}
@@ -253,7 +253,7 @@ const popularTags = ['lentils', 'halloumi', 'beetroot', 'spinach', 'mushroom', '
         const matchesSearch = !q || title.includes(q) || tags.includes(q) || sectionCategory.includes(q);
 
         if (matchesSearch) {
-          item.style.display = 'block';
+          item.style.display = 'flex';
           sectionVisibleCount++;
           totalVisible++;
         } else {
