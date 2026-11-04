@@ -30,11 +30,11 @@ Serves 2
 
 # Method 
 
-1. Fry garlic 
-1. Fry spices 
-1. Fry tomato puree 
-1. Fry off base gravy 
-1. Add salt 
-1. Add meat  
-1. Add tomatoes 
-1. Cook for 5 minutes  
+- Fry garlic 
+- Fry spices 
+- Fry tomato puree 
+- Fry off base gravy 
+- Add salt 
+- Add meat  
+- Add tomatoes 
+- Cook for 5 minutes  

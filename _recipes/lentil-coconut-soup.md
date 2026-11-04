@@ -29,11 +29,11 @@ Serves 4
 
 # Method
 
-1. Heat the oil in a large saucepan over medium heat. Add the cumin seeds and cook for 30 seconds until fragrant.
-1. Add the onion and cook for 5–6 minutes until softened.
-1. Add the garlic and ginger, cook for 1 minute.
-1. Stir in the turmeric, coriander and chilli flakes. Cook for 1 minute.
-1. Add the rinsed lentils, coconut milk and vegetable stock. Stir well and bring to the boil.
-1. Reduce heat and simmer for 20 minutes, stirring occasionally, until the lentils are soft.
-1. Blend partially (or fully) depending on your preferred texture. Season with lime juice and salt.
-1. Serve topped with fresh coriander and sliced chilli.
+- Heat the oil in a large saucepan over medium heat. Add the cumin seeds and cook for 30 seconds until fragrant.
+- Add the onion and cook for 5–6 minutes until softened.
+- Add the garlic and ginger, cook for 1 minute.
+- Stir in the turmeric, coriander and chilli flakes. Cook for 1 minute.
+- Add the rinsed lentils, coconut milk and vegetable stock. Stir well and bring to the boil.
+- Reduce heat and simmer for 20 minutes, stirring occasionally, until the lentils are soft.
+- Blend partially (or fully) depending on your preferred texture. Season with lime juice and salt.
+- Serve topped with fresh coriander and sliced chilli.

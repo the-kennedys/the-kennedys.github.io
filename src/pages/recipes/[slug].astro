@@ -207,6 +207,21 @@ const tags = getTags(recipe.data.index_entry);
     color: #292524;
   }
 
+  /* Links inside prose content */
+  .recipe-prose a {
+    color: #c2410c;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out, text-decoration-color 0.15s ease-in-out;
+  }
+
+  .recipe-prose a:hover {
+    color: #9a3412;
+    text-decoration-thickness: 2px;
+  }
+
   /* Headings styling */
   .recipe-prose h1, .recipe-prose h2 {
     font-family: 'Fraunces', Georgia, serif;
@@ -239,8 +254,8 @@ const tags = getTags(recipe.data.index_entry);
     margin-bottom: 1.5rem;
   }
 
-  /* Ingredients Checklist Styling */
-  .recipe-prose ul {
+  /* Ingredients Checklist Styling (Strictly targeted to ingredients lists) */
+  .recipe-prose ul.ingredients-checklist {
     list-style: none;
     padding-left: 0;
     margin: 1.25rem 0 2rem;
@@ -249,7 +264,7 @@ const tags = getTags(recipe.data.index_entry);
     gap: 0.5rem 1.25rem;
   }
 
-  .recipe-prose ul li {
+  .recipe-prose ul.ingredients-checklist li {
     position: relative;
     padding: 0.5rem 0.75rem 0.5rem 2.25rem;
     background-color: #faf7f2;
@@ -258,21 +273,22 @@ const tags = getTags(recipe.data.index_entry);
     cursor: pointer;
     user-select: none;
     transition: all 0.15s ease-in-out;
-    display: flex;
-    align-items: center;
     font-size: 0.9375rem;
+    line-height: 1.5;
   }
 
-  .recipe-prose ul li:hover {
+  .recipe-prose ul.ingredients-checklist li:hover {
     background-color: #f5f0e8;
     border-color: #e5ded4;
   }
 
   /* Checkbox tick box indicator */
-  .recipe-prose ul li::before {
+  .recipe-prose ul.ingredients-checklist li::before {
     content: '';
     position: absolute;
     left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
     width: 1.1rem;
     height: 1.1rem;
     border-radius: 0.35rem;
@@ -282,20 +298,36 @@ const tags = getTags(recipe.data.index_entry);
   }
 
   /* Checked state */
-  .recipe-prose ul li.checked {
+  .recipe-prose ul.ingredients-checklist li.checked {
     background-color: #f5f5f4;
     color: #a8a29e;
     text-decoration: line-through;
     border-color: #e7e5e4;
   }
 
-  .recipe-prose ul li.checked::before {
+  .recipe-prose ul.ingredients-checklist li.checked::before {
     background-color: #059669;
     border-color: #059669;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  /* Regular bulleted lists in method / notes / other sections */
+  .recipe-prose ul:not(.ingredients-checklist) {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin: 1.25rem 0 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .recipe-prose ul:not(.ingredients-checklist) li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #292524;
   }
 
   /* Method Steps / Instructions Ordered List */
@@ -377,10 +409,34 @@ const tags = getTags(recipe.data.index_entry);
     }
   });
 
+  // Identify ingredients vs other lists in recipe-prose
+  const proseEl = document.getElementById('recipe-body-content');
+  if (proseEl) {
+    let currentSection = 'ingredients'; // default initial list before any heading is ingredients
+    Array.from(proseEl.children).forEach((el) => {
+      if (/^H[1-6]$/i.test(el.tagName)) {
+        const text = el.textContent?.trim().toLowerCase() || '';
+        if (text.includes('ingredient')) {
+          currentSection = 'ingredients';
+        } else if (text.includes('method') || text.includes('direction') || text.includes('instruction') || text.includes('step')) {
+          currentSection = 'method';
+        } else {
+          currentSection = 'other';
+        }
+      } else if (el.tagName === 'UL') {
+        if (currentSection === 'ingredients') {
+          el.classList.add('ingredients-checklist');
+        } else {
+          el.classList.add('method-list');
+        }
+      }
+    });
+  }
+
   // Ingredients Tap-to-Checklist Feature
   const recipeId = window.location.pathname;
   const storageKey = `recipe_checked_${recipeId}`;
-  const ingredientsList = document.querySelectorAll('.recipe-prose ul li');
+  const ingredientsList = document.querySelectorAll('.recipe-prose ul.ingredients-checklist li');
   const trackerEl = document.getElementById('checklist-tracker');
   const countEl = document.getElementById('checklist-count');
   const resetChecklistBtn = document.getElementById('reset-checklist');

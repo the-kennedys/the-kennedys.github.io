@@ -31,14 +31,14 @@ Transcribed from Al's Kitchen on youtube.
 
 # Method 
 
-1. Fry onions and pepper until soft 
-1. Garlic and Ginger 
-1. Spices fry off 
-1. Green chillies and red chillies 
-1. Tomato puree 
-1. Splash of water, cook down 
-1. Base gravy (2 ladles) 
-1. Salt 
-1. Meat 
-1. Coriander 
-1. Tomatoes 
+- Fry onions and pepper until soft 
+- Garlic and Ginger 
+- Spices fry off 
+- Green chillies and red chillies 
+- Tomato puree 
+- Splash of water, cook down 
+- Base gravy (2 ladles) 
+- Salt 
+- Meat 
+- Coriander 
+- Tomatoes 

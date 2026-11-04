@@ -22,9 +22,9 @@ Serves 4
 
 ## Method ##
 
-1. Fry the onion until soft
-1. Add the garlic, fry for one minute
-1. Add the tomatoes, spices and tomato puree, and stir well
-1. Add the lentils and aduki beans. Bring to the boil, then simmer gently for 20 minutes
+- Fry the onion until soft
+- Add the garlic, fry for one minute
+- Add the tomatoes, spices and tomato puree, and stir well
+- Add the lentils and aduki beans. Bring to the boil, then simmer gently for 20 minutes
 
 Serve with brown basmati rice and nachos

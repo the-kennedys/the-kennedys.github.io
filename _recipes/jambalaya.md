@@ -39,13 +39,13 @@ Jambalaya is a Louisiana-born rice dish, big on flavour and fu and warming spice
 
 Before you start: you will need a large casserole or saucecen with lid.
 
-1. Prep ingredients, Peel and finely chop the onions and finely c the celery, Dice the green and red peppers, discarding the seed cores. Peel and mince the garlic. Drain the canned beans
+- Prep ingredients, Peel and finely chop the onions and finely c the celery, Dice the green and red peppers, discarding the seed cores. Peel and mince the garlic. Drain the canned beans
 
-1. Cook base. Heat the oil in a large saucepan over a medium heal Add the onions, celery, and peppers and cook for 6-8 minutes until softened. Stir in the garlic, smoked paprika, thyme, oregano fennel, cayenne pepper, pepper, and the bay leaf and cook for 1 minute to release the flavour of the herbs and spices. Add the tomato paste and rice, then stir well to combine it with the seasoned oil and vegetables.
+- Cook base. Heat the oil in a large saucepan over a medium heal Add the onions, celery, and peppers and cook for 6-8 minutes until softened. Stir in the garlic, smoked paprika, thyme, oregano fennel, cayenne pepper, pepper, and the bay leaf and cook for 1 minute to release the flavour of the herbs and spices. Add the tomato paste and rice, then stir well to combine it with the seasoned oil and vegetables.
 
-1. Simmer jambalaya. Tip the canned tomatoes, vegetable stock, ang canned beans into the pan, Stir thoroughly, scraping the bottom of the pan to make sure nothing is sticking. Bring to the boil then turn the heat down to low, cover with the lid. and simmer gently lo about 15 minutes. Try not to stir the rice while it's cooking or it may turn mushy. Check the rice about halfway through and if it looks on add a small splash of hot water, then quickly put the lid back on and continue to cook. Test a grain of rice to check it's cooked, then, ready, leave to sit for 5 minutes. Gently fluff up the jambalaya with a fork, then taste and season with salt, if needed.
+- Simmer jambalaya. Tip the canned tomatoes, vegetable stock, ang canned beans into the pan, Stir thoroughly, scraping the bottom of the pan to make sure nothing is sticking. Bring to the boil then turn the heat down to low, cover with the lid. and simmer gently lo about 15 minutes. Try not to stir the rice while it's cooking or it may turn mushy. Check the rice about halfway through and if it looks on add a small splash of hot water, then quickly put the lid back on and continue to cook. Test a grain of rice to check it's cooked, then, ready, leave to sit for 5 minutes. Gently fluff up the jambalaya with a fork, then taste and season with salt, if needed.
 
-1. Assemble and serve. Cut the lemon into wedges and chop some parsley leaves. Serve the jambalaya in bowls with the lemon wedges for squeezing over. Scatter over the parsley and add a few dashes of hot sauce for a Louisiana-style kick. Finish with a topping of "chicken" strips, if you like.
+- Assemble and serve. Cut the lemon into wedges and chop some parsley leaves. Serve the jambalaya in bowls with the lemon wedges for squeezing over. Scatter over the parsley and add a few dashes of hot sauce for a Louisiana-style kick. Finish with a topping of "chicken" strips, if you like.
 
 ## Store 
 

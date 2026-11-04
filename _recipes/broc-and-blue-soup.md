@@ -20,8 +20,8 @@ Serves 2
 
 ## Method ##
 
-1. Fry the onion until soft
-1. Add the broccoli, vegetable stock cube and 500ml water
-1. Simmer for 10 minutes
-1. Blend with a stick blender
-1. Stir in the vegan cheese (or nutritional yeast and tahini/miso) until melted and creamy
+- Fry the onion until soft
+- Add the broccoli, vegetable stock cube and 500ml water
+- Simmer for 10 minutes
+- Blend with a stick blender
+- Stir in the vegan cheese (or nutritional yeast and tahini/miso) until melted and creamy

@@ -27,9 +27,9 @@ Serves 4
 
 # Method
 
-1. Saok the dried mushrooms in 500ml boiling water
-1. Fry the onions and mushrooms for 6-8 minutes
-1. Fry the grlic for 1 minute
-1. Add the soaked mushroom and water, stock cube, chestnuts, wine,
+- Saok the dried mushrooms in 500ml boiling water
+- Fry the onions and mushrooms for 6-8 minutes
+- Fry the grlic for 1 minute
+- Add the soaked mushroom and water, stock cube, chestnuts, wine,
 puree, thyme and bay leaves. Simmer for 12 minutes
-1. Mix the cornflour with cold water, then add and cook for 2 minutes.
+- Mix the cornflour with cold water, then add and cook for 2 minutes.

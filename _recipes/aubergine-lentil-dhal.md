@@ -31,11 +31,11 @@ Serves 4
 
 # Method
 
-1. Heat 1 tbsp oil in a large pan over medium-high heat. Add the aubergine and fry for 6–8 minutes until golden and softened. Remove and set aside.
-1. Add the remaining oil to the pan. Add the cumin seeds and cook for 30 seconds.
-1. Add the onion and cook for 8 minutes until golden.
-1. Add garlic and ginger, cook for 1 minute. Add the turmeric, coriander and chilli powder and stir for 1 minute.
-1. Add the chopped tomatoes, stock and lentils. Bring to the boil, then reduce heat and simmer for 20–25 minutes, stirring occasionally, until the lentils are soft and breaking down.
-1. Stir in the fried aubergine and coconut milk (if using). Simmer for a further 5 minutes.
-1. Stir in the garam masala and season with salt.
-1. Serve with rice or naan, topped with fresh coriander and a squeeze of lemon.
+- Heat 1 tbsp oil in a large pan over medium-high heat. Add the aubergine and fry for 6–8 minutes until golden and softened. Remove and set aside.
+- Add the remaining oil to the pan. Add the cumin seeds and cook for 30 seconds.
+- Add the onion and cook for 8 minutes until golden.
+- Add garlic and ginger, cook for 1 minute. Add the turmeric, coriander and chilli powder and stir for 1 minute.
+- Add the chopped tomatoes, stock and lentils. Bring to the boil, then reduce heat and simmer for 20–25 minutes, stirring occasionally, until the lentils are soft and breaking down.
+- Stir in the fried aubergine and coconut milk (if using). Simmer for a further 5 minutes.
+- Stir in the garam masala and season with salt.
+- Serve with rice or naan, topped with fresh coriander and a squeeze of lemon.

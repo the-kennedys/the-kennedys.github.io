@@ -29,12 +29,12 @@ Serves 3–4
 
 # Method
 
-1. Parboil the potato cubes in salted water for 8 minutes until just tender. Drain and set aside.
-1. Heat the oil in a large frying pan or wok over medium-high heat. Add the cumin and mustard seeds and cook until they begin to pop.
-1. Add the onion and fry for 6–8 minutes until softened and golden.
-1. Add the garlic and ginger, cook for 1 minute.
-1. Stir in the turmeric, coriander and chilli flakes. Cook for 1 minute.
-1. Add the drained potatoes and toss to coat in the spices. Fry for 4–5 minutes until the potatoes start to get a little colour.
-1. Add the spinach in batches, stirring until wilted.
-1. Stir in the garam masala and a squeeze of lemon juice. Season with salt.
-1. Serve immediately.
+- Parboil the potato cubes in salted water for 8 minutes until just tender. Drain and set aside.
+- Heat the oil in a large frying pan or wok over medium-high heat. Add the cumin and mustard seeds and cook until they begin to pop.
+- Add the onion and fry for 6–8 minutes until softened and golden.
+- Add the garlic and ginger, cook for 1 minute.
+- Stir in the turmeric, coriander and chilli flakes. Cook for 1 minute.
+- Add the drained potatoes and toss to coat in the spices. Fry for 4–5 minutes until the potatoes start to get a little colour.
+- Add the spinach in batches, stirring until wilted.
+- Stir in the garam masala and a squeeze of lemon juice. Season with salt.
+- Serve immediately.

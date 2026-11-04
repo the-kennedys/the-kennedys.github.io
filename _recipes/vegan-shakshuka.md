@@ -29,11 +29,11 @@ Serves 3–4
 
 # Method
 
-1. Heat the oil in a large, deep frying pan or skillet over medium heat.
-1. Add the onion and peppers and cook for 8–10 minutes until softened.
-1. Add the garlic, cumin, paprika, chilli and coriander. Cook for 1–2 minutes until fragrant.
-1. Stir in the tomato puree, then add the chopped tomatoes. Season with salt and pepper.
-1. Simmer for 10 minutes until the sauce thickens slightly.
-1. Add the drained white beans, nestling them into the sauce. Simmer for a further 5–8 minutes.
-1. Taste and adjust seasoning. Scatter over fresh parsley or coriander.
-1. Serve straight from the pan with plenty of crusty bread.
+- Heat the oil in a large, deep frying pan or skillet over medium heat.
+- Add the onion and peppers and cook for 8–10 minutes until softened.
+- Add the garlic, cumin, paprika, chilli and coriander. Cook for 1–2 minutes until fragrant.
+- Stir in the tomato puree, then add the chopped tomatoes. Season with salt and pepper.
+- Simmer for 10 minutes until the sauce thickens slightly.
+- Add the drained white beans, nestling them into the sauce. Simmer for a further 5–8 minutes.
+- Taste and adjust seasoning. Scatter over fresh parsley or coriander.
+- Serve straight from the pan with plenty of crusty bread.

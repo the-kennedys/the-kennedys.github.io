@@ -23,9 +23,9 @@ Serves 2
 
 # Method
 
-1. Fry the onion for 3 to 5 minutes
-1. Fry the garlic
-1. Add the pearl barley, bay leaf, vegetable stock cube and 450ml water
-1. Cook for 50 minutes
-1. Add the leeks, cook for 5 minutes
-1. Stir in the vegan parmesan (or nutritional yeast), and crumble over the vegan feta
+- Fry the onion for 3 to 5 minutes
+- Fry the garlic
+- Add the pearl barley, bay leaf, vegetable stock cube and 450ml water
+- Cook for 50 minutes
+- Add the leeks, cook for 5 minutes
+- Stir in the vegan parmesan (or nutritional yeast), and crumble over the vegan feta

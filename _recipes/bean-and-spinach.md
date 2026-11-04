@@ -24,7 +24,7 @@ Serves 4
 
 ## Method ##
 
-1. Fry the onion until soft
-1. Add the garlic, cumin and harissa paste, fry for one minute
-1. Add the tomatoes, beans, stock, spinach, chilli and 500ml water
-1. Simmer for 10 minutes
+- Fry the onion until soft
+- Add the garlic, cumin and harissa paste, fry for one minute
+- Add the tomatoes, beans, stock, spinach, chilli and 500ml water
+- Simmer for 10 minutes

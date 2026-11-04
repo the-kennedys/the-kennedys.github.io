@@ -22,7 +22,7 @@ Serves 2
 
 # Method
 
-1. Bake the veg for 25 mins
-1. Stir and bake for another 10 mins
-1. Add the garlic, basil and tomatoes. Stir in. Top with the smoked tofu (or vegan halloumi), drizzled with a little oil
-1. Cook for 15 minutes
+- Bake the veg for 25 mins
+- Stir and bake for another 10 mins
+- Add the garlic, basil and tomatoes. Stir in. Top with the smoked tofu (or vegan halloumi), drizzled with a little oil
+- Cook for 15 minutes

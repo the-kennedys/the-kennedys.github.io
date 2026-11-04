@@ -35,8 +35,8 @@ I've been trying to wean myself off canned green lentils onto dried ones in this
 
 ## Method ##
 
-1. Fry the onion, carrot, celery and pepper for 10 minutes on a medium to low heat
-1. Add the garlic, fry for one minute
-1. Add the tomatoes, herbs and tomato puree, and stir well
-1. Add the lentils and stock. Bring to the boil, then simmer low and slow for 40 minutes
+- Fry the onion, carrot, celery and pepper for 10 minutes on a medium to low heat
+- Add the garlic, fry for one minute
+- Add the tomatoes, herbs and tomato puree, and stir well
+- Add the lentils and stock. Bring to the boil, then simmer low and slow for 40 minutes
 

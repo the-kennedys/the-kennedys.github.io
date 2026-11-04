@@ -28,11 +28,11 @@ Serves 4
 
 # Method
 
-1. Preheat oven to 200°C (180°C fan).
-1. Toss the aubergine, courgettes and peppers with 2 tbsp olive oil on a large baking tray. Season with salt and pepper. Roast for 25–30 minutes until golden and tender.
-1. Meanwhile, heat the remaining oil in a large ovenproof pan or casserole over medium heat. Add the onion and cook for 8 minutes.
-1. Add the garlic, thyme, basil and paprika. Cook for 1 minute.
-1. Stir in the tomato puree, then add the chopped tomatoes. Season and simmer for 10 minutes.
-1. Add the roasted vegetables to the tomato sauce and stir to combine.
-1. Transfer to the oven (or keep on the hob on low) for a further 10–15 minutes to let the flavours meld.
-1. Scatter over fresh basil and serve with crusty bread, rice or orzo.
+- Preheat oven to 200°C (180°C fan).
+- Toss the aubergine, courgettes and peppers with 2 tbsp olive oil on a large baking tray. Season with salt and pepper. Roast for 25–30 minutes until golden and tender.
+- Meanwhile, heat the remaining oil in a large ovenproof pan or casserole over medium heat. Add the onion and cook for 8 minutes.
+- Add the garlic, thyme, basil and paprika. Cook for 1 minute.
+- Stir in the tomato puree, then add the chopped tomatoes. Season and simmer for 10 minutes.
+- Add the roasted vegetables to the tomato sauce and stir to combine.
+- Transfer to the oven (or keep on the hob on low) for a further 10–15 minutes to let the flavours meld.
+- Scatter over fresh basil and serve with crusty bread, rice or orzo.

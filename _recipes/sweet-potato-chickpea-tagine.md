@@ -33,11 +33,11 @@ Serves 4
 
 # Method
 
-1. Heat the oil in a large pan or tagine over medium heat. Add the onion and cook for 8 minutes until golden.
-1. Add the garlic and ginger, cook for 1 minute.
-1. Add all the spices and tomato puree. Stir and cook for 2 minutes.
-1. Add the sweet potato, chopped tomatoes, stock and apricots (if using). Stir well.
-1. Bring to the boil, then cover and simmer for 20–25 minutes, stirring occasionally, until the sweet potato is tender.
-1. Add the chickpeas and stir through. Simmer uncovered for a further 5 minutes to thicken.
-1. Season with salt and a squeeze of lemon. Top with fresh coriander.
-1. Serve with couscous or flatbread.
+- Heat the oil in a large pan or tagine over medium heat. Add the onion and cook for 8 minutes until golden.
+- Add the garlic and ginger, cook for 1 minute.
+- Add all the spices and tomato puree. Stir and cook for 2 minutes.
+- Add the sweet potato, chopped tomatoes, stock and apricots (if using). Stir well.
+- Bring to the boil, then cover and simmer for 20–25 minutes, stirring occasionally, until the sweet potato is tender.
+- Add the chickpeas and stir through. Simmer uncovered for a further 5 minutes to thicken.
+- Season with salt and a squeeze of lemon. Top with fresh coriander.
+- Serve with couscous or flatbread.

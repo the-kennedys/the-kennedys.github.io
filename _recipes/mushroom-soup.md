@@ -21,9 +21,9 @@ find it is needed. The tarragon was my addition.
 
 # Method
 
-1. Cook the onions in the oil for 10 minutes 
-1. Add the mushrooms and garlic. Cook for another 10 minutes
-1. Add the tarragon, stock cube and 500ml water
-1. Bring to the boil, simmer for 10 minutes
-1. Blend using a stick blender until smooth
+- Cook the onions in the oil for 10 minutes 
+- Add the mushrooms and garlic. Cook for another 10 minutes
+- Add the tarragon, stock cube and 500ml water
+- Bring to the boil, simmer for 10 minutes
+- Blend using a stick blender until smooth
 

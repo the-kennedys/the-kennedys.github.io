@@ -32,9 +32,9 @@ Serves 2–3
 
 # Method
 
-1. Heat the oil in a saucepan over medium heat. Add the garlic and cook for 30 seconds.
-1. Add the cumin, smoked paprika and chilli flakes. Stir for 30 seconds.
-1. Add the black beans and a splash of water. Season with salt and cook for 5–8 minutes, stirring occasionally, until the beans are well coated and heated through. Roughly mash a third of the beans with the back of a spoon for texture.
-1. Assemble the bowls: start with rice, then add the black beans, sliced avocado, cherry tomatoes and red onion.
-1. Squeeze over lime juice, scatter with fresh coriander and add jalapeños if using.
-1. Serve immediately.
+- Heat the oil in a saucepan over medium heat. Add the garlic and cook for 30 seconds.
+- Add the cumin, smoked paprika and chilli flakes. Stir for 30 seconds.
+- Add the black beans and a splash of water. Season with salt and cook for 5–8 minutes, stirring occasionally, until the beans are well coated and heated through. Roughly mash a third of the beans with the back of a spoon for texture.
+- Assemble the bowls: start with rice, then add the black beans, sliced avocado, cherry tomatoes and red onion.
+- Squeeze over lime juice, scatter with fresh coriander and add jalapeños if using.
+- Serve immediately.

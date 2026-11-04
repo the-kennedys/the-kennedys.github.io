@@ -28,8 +28,8 @@ Serves 2-3
 - 25g fresh coriander, roughly chopped
 - Unsweetened plant-based Greek-style yoghurt (soya or coconut), to serve
 
-Heat the oven to 220C (200C fan)/425F/gas 7. Tip the olive oil, baharat, salt, garlic, sweet potato, beetroot and chickpeas into a roasting tin large enough comfortably to hold all the vegetables in one layer. Mix well to coat – the chickpeas will fall under the veg, which is fine – then roast for 30 minutes.
+# Method
 
-Blanch the red onion in a bowl of boiling water for a minute, then drain well. Mix in the lemon juice and sea salt, then leave to pickle for 20 minutes.
-
-Once the vegetables are out of the oven, dress them with the pickled onion/lemon mix, then taste and adjust the salt as needed. Scatter the vegan feta and coriander over the top, and serve with some plant-based yoghurt alongside.
+- Heat the oven to 220C (200C fan)/425F/gas 7. Tip the olive oil, baharat, salt, garlic, sweet potato, beetroot and chickpeas into a roasting tin large enough comfortably to hold all the vegetables in one layer. Mix well to coat – the chickpeas will fall under the veg, which is fine – then roast for 30 minutes.
+- Blanch the red onion in a bowl of boiling water for a minute, then drain well. Mix in the lemon juice and sea salt, then leave to pickle for 20 minutes.
+- Once the vegetables are out of the oven, dress them with the pickled onion/lemon mix, then taste and adjust the salt as needed. Scatter the vegan feta and coriander over the top, and serve with some plant-based yoghurt alongside.

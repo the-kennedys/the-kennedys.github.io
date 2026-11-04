@@ -31,11 +31,11 @@ Serves 4
 
 # Method
 
-1. Heat the oil in a large pan over medium heat. Add the cumin seeds and let them sizzle for 30 seconds.
-1. Add the onion and cook for 8–10 minutes until golden.
-1. Stir in the garlic and ginger, cook for 1 minute.
-1. Add the ground coriander, turmeric, chilli powder and tomato puree. Stir and cook for 2 minutes.
-1. Add the chopped tomatoes and stock. Simmer for 10 minutes until the sauce thickens.
-1. Add the chickpeas, stir well, and simmer for a further 10 minutes.
-1. Stir in the garam masala and amchur (or lemon juice). Season with salt.
-1. Serve topped with fresh coriander, with rice or flatbread.
+- Heat the oil in a large pan over medium heat. Add the cumin seeds and let them sizzle for 30 seconds.
+- Add the onion and cook for 8–10 minutes until golden.
+- Stir in the garlic and ginger, cook for 1 minute.
+- Add the ground coriander, turmeric, chilli powder and tomato puree. Stir and cook for 2 minutes.
+- Add the chopped tomatoes and stock. Simmer for 10 minutes until the sauce thickens.
+- Add the chickpeas, stir well, and simmer for a further 10 minutes.
+- Stir in the garam masala and amchur (or lemon juice). Season with salt.
+- Serve topped with fresh coriander, with rice or flatbread.

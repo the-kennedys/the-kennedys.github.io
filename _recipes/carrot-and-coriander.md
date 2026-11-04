@@ -22,9 +22,9 @@ day of purchase. Use one third to make this soup
 
 # Method
 
-1. Cook the onions and corrots in the oil for 10 minutes 
-1. Add the garlic, and both corianders. Cook for another minute.
-1. Add the stock cube and 500ml water
-1. Bring to the boil, simmer for 20 minutes
-1. Blend using a stick blender until smooth
+- Cook the onions and corrots in the oil for 10 minutes 
+- Add the garlic, and both corianders. Cook for another minute.
+- Add the stock cube and 500ml water
+- Bring to the boil, simmer for 20 minutes
+- Blend using a stick blender until smooth
 

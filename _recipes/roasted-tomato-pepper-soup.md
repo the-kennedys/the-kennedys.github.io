@@ -25,9 +25,9 @@ Serves 4
 
 # Method
 
-1. Preheat oven to 200°C (180°C fan).
-1. Place the tomatoes (cut side up), peppers and onion on a large roasting tray. Cut the top off the garlic bulb, drizzle with oil and wrap in foil. Add to the tray.
-1. Drizzle the veg with olive oil, season with salt and pepper, sprinkle with smoked paprika and thyme. Roast for 35–40 minutes until soft and slightly charred at the edges.
-1. Squeeze the roasted garlic cloves out of their skins into a blender or large pan. Add all the roasted veg and the vegetable stock.
-1. Blend until smooth. Season to taste.
-1. Reheat gently if needed. Serve with crusty bread and fresh basil.
+- Preheat oven to 200°C (180°C fan).
+- Place the tomatoes (cut side up), peppers and onion on a large roasting tray. Cut the top off the garlic bulb, drizzle with oil and wrap in foil. Add to the tray.
+- Drizzle the veg with olive oil, season with salt and pepper, sprinkle with smoked paprika and thyme. Roast for 35–40 minutes until soft and slightly charred at the edges.
+- Squeeze the roasted garlic cloves out of their skins into a blender or large pan. Add all the roasted veg and the vegetable stock.
+- Blend until smooth. Season to taste.
+- Reheat gently if needed. Serve with crusty bread and fresh basil.

@@ -25,9 +25,9 @@ Serves 4
 
 # Method
 
-1. Heat the oil in a large saucepan over medium heat. Add the onion and cook for 5–6 minutes until softened.
-1. Add the garlic and cook for 1 minute.
-1. Add the broccoli and vegetable stock. Bring to the boil, then simmer for 10–12 minutes until the broccoli is very tender.
-1. Remove from heat. Add the ground almonds and almond milk. Blend until smooth.
-1. Return to low heat. Season with nutmeg, salt and pepper. Add a splash more stock or almond milk if you prefer a thinner consistency.
-1. Serve topped with toasted flaked almonds and cracked black pepper.
+- Heat the oil in a large saucepan over medium heat. Add the onion and cook for 5–6 minutes until softened.
+- Add the garlic and cook for 1 minute.
+- Add the broccoli and vegetable stock. Bring to the boil, then simmer for 10–12 minutes until the broccoli is very tender.
+- Remove from heat. Add the ground almonds and almond milk. Blend until smooth.
+- Return to low heat. Season with nutmeg, salt and pepper. Add a splash more stock or almond milk if you prefer a thinner consistency.
+- Serve topped with toasted flaked almonds and cracked black pepper.
