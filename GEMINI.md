@@ -27,7 +27,8 @@ The site was migrated from Jekyll to Astro in October 2026. Recipes live in `_re
 
 - **Paul Kennedy** — the primary author and site maintainer.
 - Paul is **6 weeks into being vegan** (as of November 2026) and is actively learning.
-- Some existing recipes are **vegetarian but not vegan** and will be cycled out over time.
+- **Low Salt Preference:** Paul prefers very low salt in recipes (e.g. bread loaf uses only 6g salt, and commercial stock cubes usually supply plenty of sodium). Avoid adding extra salt/pinches of salt by default.
+- Some existing recipes were originally vegetarian and have been veganised over time.
 - Preferred recipe sources include: Al's Kitchen (YouTube), Bosh!, Fast 800 Cookbook.
 
 ---
@@ -58,6 +59,7 @@ index_entry: keyword, keyword  # comma-separated search tags
 | `carrot-and-coriander.md` | Carrot and Coriander Soup | Soup | ✅ Vegan |
 | `chana-masala.md` | Chana Masala | Curry | ✅ Vegan |
 | `chilli.md` | Chilli | Main | ✅ Vegan |
+| `chunky-leek-and-potato-soup.md` | Chunky Leek and Potato Soup | Soup | ✅ Vegan |
 | `five-spice-madras.md` | 5 Spice Madras | Curry | ✅ Vegan (uses base gravy) |
 | `jalfrezi.md` | Al's Jalfrezi | Curry | ✅ Vegan |
 | `jambalaya.md` | Big Bean Jambalaya | Main | ✅ Vegan (from Bosh!) |
