@@ -7,7 +7,7 @@ interface Props {
 
 const { recipe } = Astro.props;
 const category = getCategoryBadge(recipe.data.contents_entry);
-const servings = getServings(recipe.body || '');
+const servings = getServings(recipe.data);
 const excerpt = getExcerpt(recipe.body || '');
 const tags = getTags(recipe.data.index_entry);
 const rawCategory = (recipe.data.contents_entry || 'mains').toLowerCase();

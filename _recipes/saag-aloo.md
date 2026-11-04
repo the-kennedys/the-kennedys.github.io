@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe curry
 contents_entry: curries
 index_entry: saag aloo, spinach, potato, dry curry
+serves: "3–4"
 ---
 
 A classic dry spinach and potato curry. Great as a side dish or a main with rice or naan.
-Serves 3–4
 
 # Ingredients
 

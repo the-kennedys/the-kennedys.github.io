@@ -5,10 +5,10 @@ date:   2026-10-13 08:55:44 +0100
 categories: recipe curry
 contents_entry: mains
 index_entry: jamabalaya, rice, tomato
+serves: 3
 ---
 
 From Bosh! More Plants, modded to half size
-Serves 3
 
 # Ingredients
 
@@ -31,9 +31,7 @@ Serves 3
 - 400g (14oz) can chopped tomatoes
 - 250 ml fresh vegetable stock
 
-
 # Method 
-
 
 Jambalaya is a Louisiana-born rice dish, big on flavour and fu and warming spices. Great for batch cooking or feeding crowd of comfort. This version is packed with beans, sweet peppers
 

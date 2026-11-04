@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe main
 contents_entry: mains
 index_entry: ratatouille, aubergine, courgette, tomato, bake, french
+serves: 4
 ---
 
 The ratatouille base from the existing recipe, but all vegan — no halloumi needed. The vegetables do all the talking here. Serve with crusty bread or over orzo.
-Serves 4
 
 # Ingredients
 

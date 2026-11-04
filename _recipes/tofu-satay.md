@@ -5,12 +5,12 @@ date:   2026-11-04 09:10:00 +0000
 categories: recipe curry
 contents_entry: curries
 index_entry: satay, peanut, tofu, coconut, curry, stir-fry
+serves: "3–4"
+prep: "15 min"
+cook: "20 min"
 ---
 
 Rich, creamy, nutty and packed with flavour. Cornflour-coated tofu gets super crispy in the pan before being tossed with crunchy veg in a glossy peanut and coconut satay sauce.
-Serves 3–4
-Prep 15 min
-Cook 20 min
 
 # Ingredients
 

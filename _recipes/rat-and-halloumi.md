@@ -5,12 +5,12 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe main
 contents_entry: mains
 index_entry: ratatouille, smoked tofu, vegan halloumi
+serves: 2
 ---
 
 From Fast 800 Cookbook (veganised — swapped halloumi for smoked tofu or vegan halloumi)
 
 # Ingredients
-Serves 2
 - 1 tbsp Olive Oil
 - 1 Onion, cut into wedges
 - 1 Pepper, cut into 2 cm chunks

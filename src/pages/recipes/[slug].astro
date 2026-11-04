@@ -23,8 +23,8 @@ const { recipe, prev, next } = Astro.props;
 const { Content } = await render(recipe);
 
 const category = getCategoryBadge(recipe.data.contents_entry);
-const servings = getServings(recipe.body || '');
-const { prep, cook } = getPrepCookTime(recipe.body || '');
+const servings = getServings(recipe.data);
+const { prep, cook } = getPrepCookTime(recipe.data);
 const tags = getTags(recipe.data.index_entry);
 ---
 
@@ -401,14 +401,6 @@ const tags = getTags(recipe.data.index_entry);
 </style>
 
 <script>
-  // Clean up redundant standalone "Serves X" paragraphs in prose since it is in header badge
-  document.querySelectorAll('.recipe-prose > p').forEach((p) => {
-    const text = p.textContent?.trim() || '';
-    if (/^(?:serves|makes)\s*:?\s*[0-9]+/i.test(text)) {
-      p.remove();
-    }
-  });
-
   // Identify ingredients vs other lists in recipe-prose
   const proseEl = document.getElementById('recipe-body-content');
   if (proseEl) {

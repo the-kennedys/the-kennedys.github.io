@@ -5,11 +5,10 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: mains
 index_entry: lentils, bolognese
+serves: 3
+prep: "5 minutes"
+cook: "1 hour"
 ---
-
-Serves 3
-Prep: 5 minutes
-Cook: 1 hour
 
 A simple bolognese, with a trivial switch from vegy mince to green lentils.
 
@@ -31,7 +30,6 @@ I've been trying to wean myself off canned green lentils onto dried ones in this
 * 125g Green lentils
 * 250ml Vegetable Stock
 * 1 tsp marmite
-
 
 ## Method ##
 

@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe main
 contents_entry: mains
 index_entry: shakshuka, tomato, pepper, white beans, one pan
+serves: "3–4"
 ---
 
 A vibrant one-pan dish. White beans replace the eggs and soak up all the spiced tomato sauce beautifully.
-Serves 3–4
 
 # Ingredients
 

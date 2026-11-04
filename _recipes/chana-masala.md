@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe curry
 contents_entry: curries
 index_entry: chickpea, chana masala, tomato, spicy
+serves: 4
 ---
 
 A classic North Indian chickpea curry. Works brilliantly with or without the base gravy.
-Serves 4
 
 # Ingredients
 

@@ -5,9 +5,8 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: mains
 index_entry: chilli
+serves: 4
 ---
-
-Serves 4
 
 ## Ingredients ##
 

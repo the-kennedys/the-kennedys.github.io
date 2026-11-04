@@ -5,12 +5,12 @@ date:   2025-04-17 08:55:44 +0100
 categories: recipe curry
 contents_entry: curries
 index_entry: rogan, tomato
+serves: 2
 ---
 
 A fantastic medium/hot curry using base gravy
 
 From Al's Kitchen youtube channel.
-Serves 2
 
 # Ingredients
 

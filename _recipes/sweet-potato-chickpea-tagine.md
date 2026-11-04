@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe main
 contents_entry: mains
 index_entry: tagine, sweet potato, chickpea, north african, moroccan
+serves: 4
 ---
 
 North African inspired with warming spices. Very beginner-friendly and great for batch cooking. Serve with couscous or flatbread.
-Serves 4
 
 # Ingredients
 

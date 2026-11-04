@@ -5,13 +5,12 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: mains
 index_entry: mushroom, chestnut
+serves: 4
 ---
 
 From fast 800 cookbook
 
-
 # Ingredients
-Serves 4
 - 15g dried mixed muchrooms
 - 2 tbsp Olive Oil
 - 1 Onion peeled and thinly sliced

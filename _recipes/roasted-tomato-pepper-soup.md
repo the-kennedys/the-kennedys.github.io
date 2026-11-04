@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe soup
 contents_entry: soups
 index_entry: tomato, red pepper, roasted, soup, freezer-friendly
+serves: 4
 ---
 
 Simple, vibrant and freezer-friendly. Roasting the veg first gives it real depth of flavour.
-Serves 4
 
 # Ingredients
 

@@ -5,12 +5,12 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe main
 contents_entry: mains
 index_entry: leek, barley, risotto, vegan feta
+serves: 2
 ---
 
 From Fast 800 (veganised)
 
 # Ingredients
-Serves 2
 - 1 tbsp Olive Oil
 - 1 Onion, finely chopped
 - 1 Clove Garlic, crushed

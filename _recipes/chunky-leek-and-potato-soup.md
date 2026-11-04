@@ -5,12 +5,12 @@ date:   2026-11-04 09:25:00 +0000
 categories: recipe soup
 contents_entry: soups
 index_entry: leek, potato, soup, chunky, rustic
+serves: 2
+prep: "10 min"
+cook: "25 min"
 ---
 
 A rustic, unblended leek and potato soup with tender crescent-cut leeks and bite-sized potato cubes in a seasoned vegetable broth. Starchy potatoes break down just enough to naturally body the broth while keeping plenty of bite.
-Serves 2
-Prep 10 min
-Cook 25 min
 
 # Ingredients
 

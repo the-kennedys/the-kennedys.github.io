@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe soup
 contents_entry: soups
 index_entry: broccoli, almond, soup, creamy, dairy-free
+serves: 4
 ---
 
 A vegan spin on a classic broccoli soup. The almonds add a subtle creaminess and richness without any dairy.
-Serves 4
 
 # Ingredients
 

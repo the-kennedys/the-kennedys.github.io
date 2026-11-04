@@ -38,22 +38,40 @@ export function getCategoryBadge(cat?: string) {
   };
 }
 
-export function getServings(body: string): string | null {
-  const match = body.match(/^(?:serves|makes)[^\S\r\n]*:?[^\S\r\n]*(.+)$/im);
-  if (!match) return null;
-  const val = match[1].trim();
-  if (/^[0-9]+(?:\s*-\s*[0-9]+)?$/.test(val)) {
-    return `Serves ${val}`;
+export type RecipeMetadata = {
+  serves?: string | number;
+  makes?: string;
+  yield?: string;
+  prep?: string;
+  cook?: string;
+};
+
+export function getServings(data?: RecipeMetadata): string | null {
+  if (!data) return null;
+  if (data.makes) {
+    const m = String(data.makes).trim();
+    return m.toLowerCase().startsWith('makes') ? m : `Makes ${m}`;
   }
-  return val;
+  if (data.serves) {
+    const s = String(data.serves).trim();
+    return s.toLowerCase().startsWith('serves') ? s : `Serves ${s}`;
+  }
+  if (data.yield) {
+    return String(data.yield).trim();
+  }
+  return null;
 }
 
-export function getPrepCookTime(body: string): { prep: string | null; cook: string | null } {
-  const prepMatch = body.match(/^prep[^\S\r\n]*:?[^\S\r\n]*(.+)$/im);
-  const cookMatch = body.match(/^cook[^\S\r\n]*:?[^\S\r\n]*(.+)$/im);
+export function getPrepCookTime(data?: RecipeMetadata): { prep: string | null; cook: string | null } {
+  if (!data) return { prep: null, cook: null };
+  const formatTime = (label: 'Prep' | 'Cook', val?: string) => {
+    if (!val) return null;
+    const v = val.trim();
+    return v.toLowerCase().startsWith(label.toLowerCase()) ? v : `${label} ${v}`;
+  };
   return {
-    prep: prepMatch ? `Prep ${prepMatch[1].trim()}` : null,
-    cook: cookMatch ? `Cook ${cookMatch[1].trim()}` : null,
+    prep: formatTime('Prep', data.prep),
+    cook: formatTime('Cook', data.cook),
   };
 }
 
@@ -72,7 +90,7 @@ export function getExcerpt(body: string): string {
     if (line.startsWith('#')) break; // Stop at first heading
     const trimmed = line.trim();
     if (!trimmed) continue;
-    if (/^(serves|prep|cook)\b/i.test(trimmed)) continue;
+    if (/^(serves|makes|yield|prep|cook|cooking)\b/i.test(trimmed)) continue;
     cleanLines.push(trimmed);
   }
   

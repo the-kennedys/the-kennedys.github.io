@@ -4,11 +4,10 @@ date:   2026-11-03 14:45:00 +0000
 categories: recipe bread
 contents_entry: baking
 index_entry: bread, wholemeal, malted, loaf
+makes: "1 batard"
+prep: "25 min (plus 2.5h folds & proof)"
+cook: "40 min"
 ---
-
-Makes 1 batard
-Prep 25 min (plus 2.5h folds & proof)
-Cook 40 min
 
 A hearty, nutty everyday loaf with a great crust and soft crumb that toasts brilliantly. Note that 6g is quite a low-salt recipe—feel free to push it up to 10g if you are normal.
 

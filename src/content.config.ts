@@ -11,6 +11,11 @@ const recipes = defineCollection({
     categories: z.string().optional(),
     date: z.any().optional(),
     layout: z.string().optional(),
+    serves: z.union([z.string(), z.number()]).optional(),
+    makes: z.string().optional(),
+    yield: z.string().optional(),
+    prep: z.string().optional(),
+    cook: z.string().optional(),
   }),
 });
 

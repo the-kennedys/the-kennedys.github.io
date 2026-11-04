@@ -43,6 +43,10 @@ date: YYYY-MM-DD HH:MM:SS +0000
 categories: recipe <type>      # e.g. curry, soup, bread
 contents_entry: <section>      # curries | soups | mains | baking
 index_entry: keyword, keyword  # comma-separated search tags
+serves: 4                      # or serves: "2–3"
+makes: "1 batard"              # alternative to serves (or yield: "5 portions")
+prep: "15 min"                 # optional prep time string
+cook: "40 min"                 # optional cook time string
 ```
 
 ### Current Recipes

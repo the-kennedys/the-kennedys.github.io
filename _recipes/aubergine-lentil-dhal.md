@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe curry
 contents_entry: curries
 index_entry: dhal, lentil, aubergine, batch cooking
+serves: 4
 ---
 
 Rich, filling and perfect for batch cooking. The aubergine melts into the dhal giving it extra body.
-Serves 4
 
 # Ingredients
 

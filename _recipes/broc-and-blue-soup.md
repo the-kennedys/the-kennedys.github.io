@@ -5,9 +5,8 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe soup
 contents_entry: soups
 index_entry: broccoli, vegan cheese, nutritional yeast, soup
+serves: 2
 ---
-
-Serves 2
 
 ## Ingredients ##
 
@@ -16,7 +15,6 @@ Serves 2
 * 1 head broccoli (approx. 200g)
 * 1 vegetable stock cube
 * 30g vegan blue cheese, crumbled (or 2 tbsp nutritional yeast + 1 tbsp tahini/white miso for a tangy, savoury kick)
-
 
 ## Method ##
 

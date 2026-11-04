@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe main
 contents_entry: mains
 index_entry: black bean, burrito, bowl, rice, mexican, quick
+serves: "2–3"
 ---
 
 A quick weeknight winner. Everything comes together in about 20 minutes and it's endlessly customisable.
-Serves 2–3
 
 # Ingredients
 

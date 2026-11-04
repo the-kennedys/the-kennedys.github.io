@@ -5,10 +5,10 @@ date:   2026-11-04 08:00:00 +0000
 categories: recipe soup
 contents_entry: soups
 index_entry: lentil, coconut, soup, creamy, dairy-free
+serves: 4
 ---
 
 Creamy without any dairy. A warming and filling soup that comes together in under 30 minutes.
-Serves 4
 
 # Ingredients
 

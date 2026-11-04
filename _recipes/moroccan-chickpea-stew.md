@@ -5,12 +5,12 @@ date:   2026-11-04 10:18:00 +0000
 categories: recipe main
 contents_entry: mains
 index_entry: moroccan, chickpea, stew, courgette, cumin, carrot
+serves: "2–3"
+prep: "10 min"
+cook: "25 min"
 ---
 
 A fragrant, lightly spiced Moroccan vegetable stew loaded with chickpeas, carrot, and courgette in a warming cumin and coriander broth. Fresh coriander and mild red chilli give it a vibrant finish without needing any added salt.
-Serves 2–3
-Prep 10 min
-Cook 25 min
 
 # Ingredients
 
@@ -27,7 +27,6 @@ Cook 25 min
 - 1 lemon, squeezed
 - Freshly ground black pepper, to taste
 - Small handful fresh coriander, roughly chopped
-
 
 # Method
 

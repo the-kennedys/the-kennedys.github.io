@@ -5,15 +5,14 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe curry
 contents_entry: curries
 index_entry: curry
+makes: "5 portions"
+prep: "10 minutes"
+cook: "2 hours"
 ---
 
 This base gravy is a weekend job, but it makes 5 portions each of which can make 2 curries
 
 Transcribed from Al's Kitchen Youtube Channel, this is base gravy version 1. Use it with the other curry recipes, especially the [5 spice madras](/recipes/five-spice-madras). It freezes as well, so this is a month's worth of curry goodness.
-
-Makes: 5 portions
-prep: 10 minutes
-cooking: 2 hours
 
 # Ingredients
 

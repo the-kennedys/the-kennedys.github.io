@@ -5,14 +5,13 @@ date:   2025-04-17 08:51:44 +0100
 categories: recipe main
 contents_entry: mains
 index_entry: beetroot, vegan feta, sweet potato, chickpeas
+serves: "2-3"
+prep: "15 min"
+cook: "40 min"
 ---
 
 Always remember that you were eating beetroot the morning after eating this, or
 you will get the fright of your life
-
-Prep 15 min
-Cook 40 min
-Serves 2-3
 
 - 2 tbsp olive oil
 - 3 generous tsp baharat
