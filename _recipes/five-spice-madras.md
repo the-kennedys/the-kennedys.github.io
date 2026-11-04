@@ -5,9 +5,14 @@ date:   2025-04-17 08:55:44 +0100
 categories: recipe curry
 contents_entry: curries
 index_entry: madras
+serves: 2
+prep: 5 mins
+cook: 5 mins
 ---
 
-Taken from Al's Kitchen Youtube Channel
+This is a wonderful strong curry, and is so simple to make
+
+Transcribed from Al's Kitchen Youtube Channel
 
 # Ingredients List  
 
