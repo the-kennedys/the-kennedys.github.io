@@ -14,7 +14,7 @@ Serves 2
 
 # Ingredients
 
-- 2 quorn fillets, defrosted
+- 200g vegan chicken-style pieces (e.g. THIS Isn't Chicken, Vegetarian Butcher What The Cluck, or firm tofu — note: standard Quorn fillets contain egg white)
 - 1 clove garlic 
 - half tsp coriander 
 - half tsp cumin 

@@ -8,8 +8,12 @@ index_entry: lentils, bolognese
 ---
 
 Serves 3
+Prep: 5 minutes
+Cook: 1 hour
 
-Work in progress. Don't use red lentils!!!
+A simple bolognese, with a trivial switch from vegy mince to green lentils.
+
+I've been trying to wean myself off canned green lentils onto dried ones in this recipe, and it's going pretty well. I need to trial adding wine.
 
 ## Ingredients ##
 
@@ -26,6 +30,7 @@ Work in progress. Don't use red lentils!!!
 * 1 bay leaf
 * 125g Green lentils
 * 250ml Vegetable Stock
+* 1 tsp marmite
 
 
 ## Method ##

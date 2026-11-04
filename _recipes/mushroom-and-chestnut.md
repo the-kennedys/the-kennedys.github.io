@@ -17,9 +17,9 @@ Serves 4
 - 1 Onion peeled and thinly sliced
 - 400g mixed mushrooms
 - 2 Cloves Garlic Crushed
-- 1 stock cube
+- 1 vegetable stock cube
 - 180g cooked chestnuts
-- 100ml red wine
+- 100ml vegan red wine
 - 2tbsp tom puree
 - 1tsp thyme
 - 2 bay leaves
